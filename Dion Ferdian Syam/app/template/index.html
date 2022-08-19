@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>D.On Movie</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>D.On Movie Database</h1>
+            <a href="#" class="link active" id="movie-popular">Movie terpopular</a>
+            <a href="#" class="link " id="aktor-popular">Aktor terpopular</a>
+            <a href="#" class="link " id="trending-movie">Trending movie</a>
+            <form class="formPencarian searchInput" onsubmit="return pencarianMovie(event)">
+                <input type="text" name="search" id="input-cari" placeholder="Cari sebuah film " autocomplete="off">
+                <button type="submit" id="tombol-cari">Cari</button>
+            </form>
+            <a href="../../app2/index.html" class="link ">Contact me</a>
+        </nav>
+    </header>
+    <main>
+        <div class="row">
+
+            <div class="main">
+                <h2>Apa yang populer</h2>
+                <h5><span id="label"></span> terpopular saat ini, <span id="tanggal"></span></h5>
+                <div class="popular">
+                    <h5>Loading data..</h5>
+                </div>
+            </div>
+            <div class="side" id="view-search">
+                <form class="cariFilm searchInput" onsubmit="return pencarianMovie(event)">
+                    <input type="text" name="search" id="input-cari" placeholder="Cari sebuah film" autocomplete="off">
+                    <button type="submit" id="tombol-cari">Cari</button>
+                </form>
+            </div>
+        </div>
+        <div class="result">
+            <h4>movie popular</h4>
+            <div class="bungkusAllMovie"></div>
+        </div>
+    </main>
+
+    <div id="my-modal" class="hide">
+
+        <div class="modalContent">
+            <h3>Biography</h3>
+            <div class="modalBody">
+
+            </div>
+            <span class="close">tutup</span>
+
+        </div>
+
+    </div>
+
+
+
+
+    <footer class="footer">
+        <h6>Hak Cipta ©2021 D.On Programming Co., Ltd.</h6>
+    </footer>
+
+
+    <script src="../../aset/url/jquery-3.6.0.min.js"></script>
+    <script src="../javascript/autoload.js"></script>
+</body>
+
+</html>

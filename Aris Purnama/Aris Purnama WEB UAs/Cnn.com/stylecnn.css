@@ -1,0 +1,138 @@
+html,body {
+    font-family: sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+header {
+    display: flex;
+    background-color: red;
+    color: black;
+    padding: 16px 44px;
+    align-items: center;
+    gap: 16px;
+}
+
+#logo span {
+    font-size: 40pt;
+    font-family: fantasy;
+    color: white;
+    font-variant-caps: unset;
+}
+#logo-cnn{
+    display: flex;
+    align-items: center;
+}
+#logo-cnn img{
+    width: 100px;
+    
+}
+/* main */
+#container{
+    display: flex;
+    align-items: center;
+    padding: 4px 64px;
+}
+
+#container div{
+    display: flex;
+    background-color: white;
+    /* padding: 12px; */
+    font-size: 10pt;
+}
+#container div p{
+    padding: 12px;
+}
+#input-berita{
+    width: 268px;
+    height: 28px;
+    padding: 4px;
+}
+#formulir{
+    display: flex;
+    margin-left: auto;
+    flex-flow: column;
+
+}
+#out-put{
+    padding: 64px;
+    margin: 0 64px;
+    text-align: center;
+    background-color: initial;
+}
+
+.berita-utama{
+    color: black;
+    background-color: whitesmoke;
+
+}
+.berita-utama img{
+    width: 736px;
+}
+
+.berita-utama p{
+    display: flex;
+    flex-direction: column;
+}
+#ikon-akun {
+    font-family: 'Material Icons Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 34px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    margin-left: auto;
+}
+
+
+#loading {
+    margin:0px auto;
+    width:100px;
+    border: 8px solid rgb(1, 1, 22);
+    border-top: 8px solid transparent;
+    border-radius: 999px;
+    width: 40px;
+    height: 40px;
+    animation: spin-1 2s infinite linear;
+  }
+@keyframes spin-1 {
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+/* responsive */
+@media( max-width:1000px){
+    .berita-utama img{
+        width: 256px;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+        /* flex-flow: column; */
+    }  
+    #out-put {
+        padding: 32px;
+        margin: 0;
+        text-align: center;
+        background-color: initial;
+    }
+    header {
+        padding: 16px 16px;
+        gap: 16px;
+    }
+}
+
+/* footer */
+#footer{
+    text-align: center;
+    font-size: 13px !important;
+    background-color: grey;
+}

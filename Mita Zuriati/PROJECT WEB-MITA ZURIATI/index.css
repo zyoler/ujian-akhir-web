@@ -1,0 +1,17 @@
+
+nav ul li:first-child a{
+    color: lightblue;
+}
+.tamp{
+    background: url('gambar/picture3.jpg') no-repeat;
+    width:100%;
+    height:350px;
+    background-size:cover;   
+    background-position:center;
+    color: snow;
+}
+.wlc h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    padding-top: 70px;
+}

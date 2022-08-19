@@ -1,0 +1,52 @@
+body{
+    background-image: url('gambar/film4.jpg');
+    background-size: cover; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    overflow-x: hidden;
+     min-height: 100vh;
+}
+header{
+    background-color: blue;
+}
+.latest{
+    gap:20px;
+    padding-block-end: 2rem;
+}
+#ucapan{
+    margin:0;
+    padding:0;
+    font-style:italic;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color:yellow;
+    direction:left;
+    font-weight: bold;
+    font-weight: bolder;
+
+}
+a{
+    text-decoration: none;
+    color:white;
+    text-align: center;
+}
+p{
+    color: white;
+}
+footer{
+    position: absolute;
+    width:100%;
+    bottom:0;
+    text-align: center;
+    color: white;
+    padding: 8px;
+    background-color: black;
+
+}
+.latest a{
+    padding:10px;
+    margin-top: 10px;
+    color:red;
+    text-decoration: none;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pemesanan | Tomp Stone Manufacture</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+	<button class="tombol" name="back"><a href="../../index.html">Kembali</a></button>
+	<div class="pesanan">
+		<form>
+			<h1>Pemesan</h1>
+			<div>
+				<label>Nama Pemesan:</label>
+				<input type="text" name="nama-client" id="nama-client" required/>
+			</div>
+			<div>
+				<label>Nama Almarhum:</label>
+				<input type="text" name="nama-alm" id="nama-alm" />
+			</div>
+
+			<div>
+				<label>Tempat Lahir:</label>
+				<input type="text" name="tl" id="tl" />
+			</div>
+			<div>
+				<label>Tanggal Lahir:</label>
+				<input type="date" name="tll" id="tll" />
+			</div>
+			<div>
+				<label>Tempat Wafat:</label>
+				<input type="text" name="tw" id="tw" />
+			</div>
+			<div>
+				<label>Tanggal Lahir:</label>
+				<input type="date" name="ttw" id="ttw" />
+			</div>
+			<div>
+				<label>Gender
+				<input type="radio" name="gender" />Laki-Laki
+				<input type="radio" name="gender" />Perempuan
+			</label>
+			</div>
+			<div>
+				<label>No HP</label>
+				<input type="number" name="no-hp" id="no-hp" />
+			</div>
+			<div>
+				<label>Produk</label>
+				<select>
+					<option>*****SELECT PRODUK*****</option>
+					<option>Kijing Basar IDR 1300K</option>
+					<option>Kijing Kecil IDR 900K</option>
+					<option>Maesan Padung Tancap IDR 200K </option>
+					<option>Maesan Padung Tancap Kecil IDR 150K </option>
+					<option>Maesan Padung Salip IDR 250K </option>
+				</select>
+			</div>
+			<div>
+				<label>Kota</label>
+				<select>
+					<option>*****SELECT KOTA*****</option>
+					<option>Semarang</option>
+					<option>Boyolali</option>
+					<option>Salatiga</option>
+					<option>Surakarta</option>
+				</select>
+			</div>
+			<div>
+				<label>Alamat:</label>
+				<textarea cols="40" rows="5" name="alamat" id="alamat"></textarea>
+			</div>
+			<div>
+				<button class="tombol" onclick="validasi()" value="Simpan">Simpan</button>
+			</div>
+		</form>
+	</div>
+	<script>
+		function validasi() {
+			const tamp = document.querySelectorAll('input');
+		}
+	</script>
+</body>
+
+</html>

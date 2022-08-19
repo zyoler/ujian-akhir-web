@@ -1,0 +1,45 @@
+{
+    "d.on Programming" : [
+        {
+            "kunci" : "chat",
+            "url" : "https://fdciabdul.tech/api/ayla",
+            "key" : {
+                "pesan" : "pesan yang ingin dibalas"
+            }
+        },
+        {
+            "kunci" : "wikipedia",
+            "url" : "http://public-restapi.herokuapp.com/api/wiki-pedia",
+            "key" : {
+                "q" : "kata kunci"
+            }
+        },
+        {
+            "kunci" : "tmdb",
+            "url" : {
+                "baseURL" : "https://api.themoviedb.org/3",
+                "imageURL" : "https://image.tmdb.org/t/p/w500"
+
+            },
+            "key" : {
+                "api_key" : "b2f8aaf9d097290d2d5a648dad5ace08",
+                "token" : "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiMmY4YWFmOWQwOTcyOTBkMmQ1YTY0OGRhZDVhY2UwOCIsInN1YiI6IjYwZmNhMWUzOGU4ZDMwMDAyZGJmM2U5MiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ._oPS2-O8C426NnfqbzrDjo3LMeFI-3MIjCB84iOLoFM",
+                "request" : "097f7c69b9929f613161fcd4c1f3509c6dbceaec",
+                "session_id" : "dd4f53771d2c5607698880791d99673e897231f8",
+                "id" : "10801849"
+
+            }
+        },
+        {
+            "kunci" : "imdb",
+            "url" : "http://omdbapi.com",
+            "key" : {
+                "apikey" : "9c0529f1",
+                "key" : {
+                    "s" : "search",
+                    "i" : "detail by id"
+                }
+            }
+        }
+    ]
+} 

@@ -1,0 +1,25 @@
+nav ul li:nth-child(5) a{
+    color: lightblue;
+}
+.yr{
+    justify-content: space-between;
+    text-align: center;
+}
+.years{
+   background-color: transparent;
+   outline: none;
+   border-color: navy;
+   margin:2px 4px;
+   padding:5px;
+   width:100px;
+}
+.years:hover{
+    background-color: rgb(32, 32, 204);
+    color:snow;
+    border-color: snow;
+}
+.years:focus{
+    background-color: navy;
+    color:snow;
+    border-color: snow;
+}

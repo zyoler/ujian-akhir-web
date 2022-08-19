@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style_covid.css">
+</head>
+
+<body>
+
+    <!-- Bagian Navigasi -->
+    <nav>
+        <header>
+            <div class="logo">
+                <a href="../HALAMAN UTAMA/halaman-utama.html">
+                    <img src="SGN_07_15_2021_1626313355872.png" alt="">
+                    <h1 class="namaweb">Webpedia</h1>
+                </a>
+            </div>
+        </header>
+
+        <ul>
+            <li class="navbar"><a href="../HALAMAN UTAMA/halaman-utama.html">BERANDA</a></li>
+            <li class="navbar"><a href="covid-19.HTML">COVID-19</a></li>
+        </ul>
+    </nav>
+    <!-- Akhir Nav-bar -->
+
+
+    <!-- Pilihan provinsi -->
+    <div id="drawer-kiri" class="drawer">
+        <header>
+            <h3>Pilih Provinsi</h3>
+            <button class="tombol-tutup-drawer material-icons-outlined">close</button>
+        </header>
+        <div class="daftar">
+            <button class="prov" data-id=0>Jakarta</button>
+            <button class="prov" data-id=1>Jawa Barat</button>
+            <button class="prov" data-id=2>Jawa Tengah</button>
+            <button class="prov" data-id=3>Jawa Timur</button>
+            <button class="prov" data-id=4>Yogyakarta </button>
+            <button class="prov" data-id=5>Kalimantan Timur</button>
+            <button class="prov" data-id=12>Kalimantan Selatan </button>
+            <button class="prov" data-id=16>Kalimantan Tengah </button>
+            <button class="prov" data-id=20>Kalimantan Barat </button>
+            <button class="prov" data-id=25>Kalimantan Utara </button>
+            <button class="prov" data-id=10>Sumatra Barat </button>
+            <button class="prov" data-id=11>Sumatra Utara </button>
+            <button class="prov" data-id=14>Sumatra selatan </button>
+            <button class="prov" data-id=13>Kepulauan Riau </button>
+            <button class="prov" data-id=22>Sulawesi Utara </button>
+            <button class="prov" data-id=23>Sulawesi Tengah </button>
+            <button class="prov" data-id=8>Sulawesi Selatan </button>
+            <button class="prov" data-id=29>Sulawesi tenggara </button>
+            <button class="prov" data-id=32>Sulawesi Barat </button>
+            <button class="prov" data-id=18>Kepulauan Bangka Belitung </button>
+            <button class="prov" data-id=6>Banten </button>
+            <button class="prov" data-id=7>Riau </button>
+            <button class="prov" data-id=9>Bali </button>
+            <button class="prov" data-id=15>NTT </button>
+            <button class="prov" data-id=17>Lampung </button>
+            <button class="prov" data-id=19>Papua </button>
+            <button class="prov" data-id=21>Aceh </button>
+            <button class="prov" data-id=24>NTB </button>
+            <button class="prov" data-id=26>Jambi </button>
+            <button class="prov" data-id=27>Papua Barat </button>
+            <button class="prov" data-id=28>Bengkulu </button>
+            <button class="prov" data-id=30>Maluku </button>
+            <button class="prov" data-id=31>Maluku Utara </button>
+            <button class="prov" data-id=33>Gorontalo </button>
+        </div>
+    </div>
+    <!-- akhir pilih provinsi -->
+
+
+    <!-- Covid Dunia -->
+    <div class="drawer" id="covid-dunia">
+        <header>
+            <h3>Telusuri Negara</h3>
+            <button class="tombol-tutup-drawer material-icons-outlined">close</button>
+        </header>
+        <form name="cariNegara" class="cari">
+            <input type="text" name="kataKunci">
+            <button class="material-icons-outlined">search</button>
+        </form>
+        <p class="ket">
+            Isi nama negara dengan bahasa inggris yang benar agar negara yang ingin anda ketahui perkembangan virus covid-19 nya akurat.
+        </p>
+    </div>
+
+
+    <div class="output-dunia">
+        <button class="tombol-tutup-output material-icons-outlined">close</button>
+        <p class="negara"></p>
+        <p class="populasi"></p>
+        <p class="kasus"></p>
+        <p class="dirawat"></p>
+        <p class="meninggal"></p>
+        <p class="sembuh"></p>
+        <p class="update"></p>
+    </div>
+    <!-- Akhir Covid Dunia -->
+
+
+    <!-- Tampilkan Covin perdaerah -->
+    <div id="menampilkan">
+        <button class="tombol-tutup-output material-icons-outlined">close</button>
+        <p id="provinsi"></p>
+        <p id="kasus"></p>
+        <p id="dirawat"></p>
+        <p id="sembuh"></p>
+        <p id="meninggal"></p>
+        <p id="last-date"></p>
+    </div>
+    <!-- Akhir Tampilkan Covin perdaerah -->
+
+    <!-- Tampilkan Data Vaksin -->
+    <div class="output-vaksin">
+        <p id="total"></p>
+        <p id="sasaran"></p>
+        <p id="lansia"></p>
+        <p id="publik"></p>
+        <p id="vaksin1"></p>
+        <p id="vaksin2"></p>
+        <p id="last-update"></p>
+    </div>
+
+    <!-- Akhir data vaksin -->
+
+    <!-- Artikel Covid-19 -->
+    <main>
+        <div class="container">
+            <div class="navigasi">
+                <div class="logo">
+                    <a href="../HALAMAN UTAMA/halaman-utama.html">
+                        <img src="SGN_07_15_2021_1626313355872.png" alt="">
+                        <h1 class="namaweb">Webpedia</h1>
+                    </a>
+                </div>
+
+                <ul>
+                    <li class="nav"><a href="" class="nav-daerah">Daerah</a></li>
+                    <li class="nav"><a href="" class="dunia">Dunia</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="artikel">
+                    <span>Pengertian Virus Corona (COVID-19)</span><br> Infeksi coronavirus merupakan penyakit yang disebabkan oleh virus corona dan gejala utama berupa gangguan pernapasan. Penyakit ini menjadi sorotan karena kemunculannya di akhir tahun
+                    2019 pertama kali di Wuhan, China. Lokasi kemunculannya pertama kali ini, membuat coronavirus juga dikenal dengan sebutan virus Wuhan. Selain China, virus corona juga menyebar secara cepat ke berbagai negara lain, termasuk Jepang,
+                    Thailand, Jepang, Korea Selatan, bahkan hingga ke Amerika Serikat. <br>
+                    <span>Penyebab Virus Corona (COVID-19)</span><br> Penyebab virus Corona merupakan virus single stranded RNA yang berasal dari kelompok Coronaviridae. Dinamakan coronavirus karena permukaannya yang berbentuk seperti mahkota ( crown
+                    /corona). Virus lain yang termasuk dalam kelompok yang serupa adalah virus yang menyebabkan Middle East Respiratory Syndrome (MERS-CoV) dan Severe Acute Respiratory Syndrome (SARS-CoV) beberapa tahun silam. Namun, virus corona dari
+                    Wuhan ini merupakan virus baru yang belum pernah ada pada manusia sebelumnya. Karena itu, virus ini juga disebut sebagai 2019 Novel Coronavirus atau 2019-nCoV. Virus corona umumnya ditemukan pada hewan –seperti unta, ular, hewan ternak,
+                    kucing, dan kelelawar. Manusia dapat tertular virus apabila terdapat riwayat kontak dengan hewan tersebut, misalnya pada peternak atau pedagang di pasar hewan. Namun, adanya ledakan jumlah kasus di Wuhan, Cina menunjukkan bahwa virus
+                    corona dapat ditularkan dari manusia ke manusia. Virus dapat ditularkan melalui droplet, yaitu partikel udara yang berukuran sangat kecil dan biasanya keluar saat batuk atau bersin. Ketika droplet tersebut terhirup atau mengenai lapisan
+                    mata, seseorang berisiko tertular penyakit ini. Meski semua orang dapat terinfeksi virus corona, mereka yang lanjut usia, memiliki penyakit kronis, dan memiliki daya tahan tubuh lebih rentan mengalami infeksi ini serta komplikasinya.
+                    <br>
+                    <span>Gejala Virus Corona (COVID-19)</span><br> Gejala Coronavirus bervariasi, mulai dari flu biasa hingga gangguan pernapasan menyerupai pneumonia. Gejala Corona yang umum dialami mereka yang mengalami infeksi coronavirus adalah:
+                    Demam tinggi disertai demam Batuk kering Pilek Hidung dan bersin-bersin Nyeri tenggorokan Sesak napas Gejala virus corona tersebut dapat bertambah parah secara cepat dan menyebabkan kegagalan napas hingga kematian. Centers for Disease
+                    Control and Prevention (CDC) gejala infeksi virus 2019-nCoV dapat muncul mulai dua hari hingga 14 hari setelah terpapar virus tersebut. <br>
+                    <span>Diagnosa Virus Corona (COVID-19)</span><br> Infeksi coronavirus umumnya diketahui melalui gejala dan pemeriksaan fisik yang dikeluhkan pasien. Setelah itu, dokter akan melakukan pemeriksaan penunjang untuk membantu diagnosis.
+                    Pemeriksaan tersebut antara lain adalah pemeriksaan darah lengkap, pemeriksaan darah, fungsi ginjal dan hati serta pemeriksaan virologi. Selain itu, spesimen dari hidung dan faring (tenggorokan) pasien pun akan diambil dengan teknik
+                    swab. Demikian pula, sediaan dahak dan, bila diperlukan, cairan bronkus (saluran pernapasan yang lebih kecil). Melalui pemeriksaan tersebut dapat diketahui apakah penyakit yang disebabkan oleh virus atau sebab yang lain. Sementara
+                    itu, plasma darah pasien pun akan diperiksa untuk menemukan RNA virus corona. Untuk pemeriksaan radiologi, dapat dilakukan pemeriksaan rontgen ( x-ray ) dada dan CT-scan dada. sebagian besar pasien akan menunjukkan gambaran kekeruhan
+                    di kedua paru. <br>
+                    <span>Komplikasi Virus Corona (COVID-19)</span><br> Pasien yang terinfeksi coronavirus dapat mengalami gejala gangguan pernapasan seperti pneumonia berat, seperti demam tinggi dan sesak napas. Komplikasi seperti gagal napas, gagal
+                    jantung akut, dan infeksi sekunder akibat kuman lainnya dapat terjadi bila kondisi tersebut tidak segera diatasi atau bila penyakit mengalami perburukan dengan sangat cepat. <br>
+                    <span>Pengobatan Virus Corona (COVID-19)</span><br> Hingga saat ini, belum ada terapi anti-virus yang terbukti efektif untuk mengatasi infeksi 2019-novel coronavirus. Beberapa anti-virus yang telah berhasil menangani infeksi MERS-CoV
+                    dan SARS-CoV sebelumnya, belum menunjukkan hasil yang memuaskan untuk mengatasi infeksi coronavirus yang baru ini. Penderita yang terinfeksi virus corona akan menerima terapi yang bersifat suportif untuk mengurangi gejala. Misalnya
+                    anti-piretik untuk menurunkan suhu tubuh dan cairan untuk mencegah dehidrasi, serta terapi oksigen pada pasien yang mengalami sesak napas. Pada kondisi yang berat, bantuan napas melalui mesin ventilator dapat diberikan pada pasien
+                    untuk menyokong fungsi organ vital lainnya. <br>
+                    <span>Pencegahan Virus Corona (COVID-19)</span><br> Meski gejala penyakit coronavirus menyerupai penyakit pernapasan lain seperti pneumonia atau influenza, sejauh ini belum ada vaksin yang dapat mencegah penularan penyakit coronavirus.
+                    Pemberian vaksin pneumonia maupun vaksin influenza tidak dapat memberikan proteksi terhadap penyebaran infeksi virus corona. Cara terbaik untuk menghindari penyakit infeksi coronavirus adalah melakukan tindakan pencegahan secara aktif.
+                    CDC menyarankan setiap orang melakukan tindakan seperti: Rutin mencuci tangan menggunakan sabun dan air mengalir selama setidaknya 20 detik Jika tidak mendukung atau tidak tersedia air dan sabun, bersihkan tangan menggunakan pembersih
+                    tangan berbahan alkohol menyentuh hidung, mata, atau mulut terutama bila tangan masih kotor kontak dengan orang yang sedang sakit Tetaplah di rumah bila sedang sakit Tutup mulut dengan tisu atau dengan menekuk siku saat Anda batuk
+                    atau bersin kontak dengan hewan ternak secara langsung mengatasi masalah, terutama ke daerah dengan kasus infeksi coronavirus usahakan mengonsumsi daging yang belum matang sempurna. Menjaga nutrisi dengan mengonsumsi makanan yang bergizi
+                    seimbang, minum air putih dalam jumlah yang cukup, dan istirahat yang cukup juga dapat membantu menjaga kondisi tubuh agar tetap bugar dan terhindar dari infeksi virus corona. Setiap orang yang mengalami gejala infeksi corona, jangan
+                    ragu untuk segera bekerja dengan tenaga kesehatan untuk memastikan penyebabnya.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>copyright &copy; 2021. Yusfa Julian</p>
+    </footer>
+
+    <!-- Akhir Artikel -->
+
+
+    <script src="jvscript_covid.js"></script>
+</body>
+
+</html>

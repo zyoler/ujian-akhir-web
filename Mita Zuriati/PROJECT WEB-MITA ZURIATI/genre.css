@@ -1,0 +1,25 @@
+nav ul li:nth-child(3) a{
+    color: lightblue;
+}
+.gnr{
+    justify-content: space-between;
+    text-align: center;
+}
+.genres{
+   background-color: transparent;
+   outline: none;
+   border-color: navy;
+   margin:2px 4px;
+   padding:5px;
+   width:100px;
+}
+.genres:hover{
+    background-color: rgb(32, 32, 204);
+    color:snow;
+    border-color: snow;
+}
+.genres:focus{
+    background-color: navy;
+    color:snow;
+    border-color: snow;
+}

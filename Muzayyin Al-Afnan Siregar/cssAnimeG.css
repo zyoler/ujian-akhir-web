@@ -1,0 +1,46 @@
+.divnyo{
+  gap: 25px;
+  margin-top: 25px;
+  justify-content: space-around;
+  margin-left: 75px;
+  margin-bottom: 25px;
+  background: url(./nav-bg2.png) ;
+  background-size: 100% 100%;
+  opacity: 1;
+}
+
+.genre{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+  text-align: center;
+  flex-flow: row wrap;
+  font-family: chelsea;
+}
+
+.genre > * {
+  flex-basis: 20rem;
+  flex-shrink: 0; 
+}
+
+.genre img{
+  border-radius: 15px;
+  border: solid black;
+}
+
+.genre h4{
+  color:rgb(158, 217, 226);
+  text-align: center;
+}
+
+.genre h5{
+  color: rgb(138, 36, 36);
+}
+.genre a{
+  text-decoration: none;
+}
+
+.genre p{
+  color: aliceblue;
+
+}

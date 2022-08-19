@@ -1,0 +1,25 @@
+nav ul li:nth-child(4) a{
+    color: lightblue;
+}
+.cnt{
+    justify-content: space-between;
+    text-align: center;
+}
+.countries{
+   background-color: transparent;
+   outline: none;
+   border-color: navy;
+   margin:2px 4px;
+   padding:5px;
+   width:100px;
+}
+.countries:hover{
+    background-color: rgb(32, 32, 204);
+    color:snow;
+    border-color: snow;
+}
+.countries:focus{
+    background-color: navy;
+    color:snow;
+    border-color: snow;
+}

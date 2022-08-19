@@ -1,0 +1,50 @@
+.banner{
+    padding: 150px 0;
+    background-color: rgb(176, 218, 255);
+    color: rgb(65, 65, 65);
+}
+.container img{
+    width: 150px;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px gray;
+    margin-bottom: 10px;
+}
+.container h2{
+    margin-bottom: 10px;
+}
+.container p{
+    font-size: 15px;
+}
+.container{
+    padding: 0 50px;
+}
+.isi-beranda{
+    padding: 100px 5px;
+    text-align: center;
+    color: rgb(75, 75, 75);
+    box-shadow: 0 3px 5px gray;
+}
+main p::first-line{
+    color: rgb(68, 68, 68);
+    font-weight: bold;
+    font-size: 1rem;
+}
+main{
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.judul{
+    text-align: center;
+    padding-top: 80px;
+}
+.judul div:first-child{
+    padding-bottom: 50px;
+}
+.judul div img{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}

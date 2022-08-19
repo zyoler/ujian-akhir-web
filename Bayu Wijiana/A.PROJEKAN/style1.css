@@ -1,0 +1,501 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media(min-width :600px) {
+    #judul-web {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .slide-utama #warning {
+        width: 50%;
+    }
+
+    #layar-logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #layar-logo-hadits {
+        height: 300px;
+        width: 98%;
+        align-items: stretch;
+        margin-bottom: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .coba {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    #paragraf {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rawi {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: flex-start;
+        width: 98%;
+    }
+
+}
+
+body {
+    background-image: url(image/abga.jpg);
+    background-repeat: repeat-y;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bodi3 {
+    background-image: url(image/background3.jpg);
+    background-size: 200px;
+    background-repeat: repeat-y;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#body-home {
+    background-image: url(image/backgroundhome.png);
+    width: 100%;
+
+}
+
+header {
+    opacity: 80%;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 64px;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    margin-top: -5px;
+    height: 40px;
+    width: 188px;
+    background-color: white;
+    color: gray;
+    border: 1px solid rgb(228, 240, 228);
+    text-align: center;
+    padding-top: 25px;
+    font-family: "Proxima Nova",
+        Arial,
+        sans-serif;
+    word-spacing: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.header-home {
+    opacity: 65%;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-home div a {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.header-home :hover {
+
+    font-size: 16px;
+    text-decoration: underline;
+    border-bottom: lightskyblue 3px solid;
+    background-image: url(image/background6.png);
+}
+
+.header-home div {
+    height: 70px;
+    background-color: black;
+    border: 1px solid rgb(228, 240, 228);
+    word-spacing: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+}
+
+header div:hover {
+    border-bottom: 2px solid lightblue;
+}
+
+header div a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+header:hover>div>a {
+    transform: translateY(20px);
+    transition: 0.5s;
+}
+
+
+.kotak-kecil-home {
+    background-image: url(image/background6.png);
+    border-radius: 10px;
+}
+
+.kotak-kecil {
+    background-color: green;
+    color: white;
+}
+
+.kotak-kecil-hadits {
+    background-color: rgb(12, 67, 168);
+    color: white;
+}
+
+.samping {
+    color: black;
+}
+
+header form input {
+    border-radius: 10px;
+    width: 150px;
+    height: 27px;
+    text-align: center;
+}
+
+.layar-home img {
+    height: 50px;
+    transition: 1s;
+}
+
+.nama-web {
+    width: 40%;
+    background-color: gray;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 60%;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+
+}
+
+.nama-web h1 {
+    transition: 2s;
+    color: white;
+    margin: 10px;
+
+}
+
+.kotak-logo {
+    width: 40%;
+    background-color: gray;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 70%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.layar-home img:hover {
+    height: 60px;
+}
+
+.layar-home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+
+}
+
+
+.slide-utama {
+    background-image: url(image/background2.png);
+    max-width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.judul,
+.sub-judul,
+.judul-hadits,
+.sub-judul-hadits {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    font-size: 25px;
+    width: 49%;
+    color: white;
+    border-top: solid 100px white;
+}
+
+.judul {
+    background-color: green;
+}
+
+.sub-judul {
+    background-color: rgb(19, 245, 7);
+}
+
+.judul-hadits {
+    background-color: rgb(12, 67, 168);
+}
+
+.sub-judul-hadits {
+    background-color: rgb(30, 108, 252);
+}
+
+.slide-utama #warning {
+    height: 50px;
+    width: 98%;
+    background-color: white;
+    font-size: 20px;
+    font-family: "Proxima Nova",
+        Arial,
+        sans-serif;
+}
+
+#layar-logo {
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: left;
+    font-size: 30px;
+    background-color: white;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+img {
+    height: 200px;
+    border-radius: 5px;
+    margin: 0px 40px 0px 30px;
+
+}
+
+#layar-logo-hadits img {
+    border: solid 2px rgb(167, 199, 8);
+    height: 220px;
+
+}
+
+.rawi {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.lis-rawi {
+    width: 50%;
+    margin-left: 10px;
+    background-color: white;
+    border: gray 3px solid;
+    border-radius: 20px;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+
+.slide-utama .lis-rawi>div {
+    margin: 10px 0px 10px 0px;
+    width: 80%;
+    box-shadow: 0px 2px 2px 2px gray;
+    color: rgb(30, 35, 41);
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.slide-utama .lis-rawi>h2 {
+    font-size: 40px;
+    padding-bottom: 8px;
+
+}
+
+.slide-utama .lis-rawi>div:hover {
+    width: 82%;
+    box-shadow: 4px 4px 4px 4px gray;
+}
+
+#searc-hadits {
+
+    width: 45%;
+    margin-left: 15px;
+    background-color: gray;
+    opacity: 70%;
+    border-radius: 20px;
+    border: 4px double white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#form-input-hadits {
+    width: 90%;
+}
+
+#form-input-hadits input {
+    border-radius: 15px;
+    width: 90%;
+    height: 80px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#paragraf {
+    margin-top: 100px;
+    margin-bottom: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+#paragraf h1 {
+    color: rgb(19, 245, 7);
+    font-size: 50px;
+
+
+}
+
+#paragraf p {
+    font-size: 30px;
+    text-indent: 50px;
+
+}
+
+.bawah,
+.bawah-hadits {
+    height: 20px;
+    width: 100%;
+    background-color: gray;
+    border-top: 2px solid white;
+}
+
+.bawah-hadits {
+    margin-top: 100px;
+}
+
+footer {
+    height: 200px;
+    width: 100%;
+    text-align: left;
+    background-color: rgb(228, 240, 231);
+    border-top: white 2px solid;
+    color: gray;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 100px;
+    padding-left: 20px;
+    word-spacing: 4px;
+
+
+}
+
+.isi-info {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+
+#namahadits,
+h2 {
+    color: rgb(30, 108, 252);
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+#hadits {
+    text-align: center;
+    font-size: 20px;
+    word-spacing: 5px;
+    margin: 10px 20px 10px 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hiasan {
+    height: 20px;
+    width: 98%;
+    background-color: black;
+    opacity: 70%;
+}
+
+.jargon {
+    flex: 2;
+    border-top: 5px solid gray;
+}
+
+.jargon-hadits {
+    flex: 2;
+    color: white;
+    border-top: 5px solid gray;
+}
+
+#layar-logo-hadits>div {
+    border-top: 5px solid gray;
+    width: 280px;
+    background-color: black;
+    font-size: 40px;
+    opacity: 80%;
+    font-weight: bold;
+}

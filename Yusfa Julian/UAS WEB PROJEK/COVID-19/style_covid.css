@@ -1,0 +1,420 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* mY style */
+
+body {
+    font: 16px/28px arial, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+    background-image: url(webb.png);
+}
+
+
+/* TOP-BAR */
+
+nav {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background-color: #bbb;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .6);
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+body>nav>header {
+    padding: 0 0 10px 20px;
+}
+
+main {
+    padding-block: 16px;
+}
+
+div.logo img {
+    width: 32px;
+    height: 32px;
+}
+
+h1.namaweb {
+    display: inline-block;
+    font-family: serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: -9px 5px 5px rgba(0, 0, 0, .6);
+    color: #333;
+    padding-right: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav li.navbar {
+    margin-right: 6px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: tomato;
+    padding: 2px;
+    font-size: 12px;
+}
+
+nav a:hover {
+    color: #eee;
+    font-weight: bold;
+}
+
+div.container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.drawer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+    position: fixed;
+    top: 55px;
+    height: calc(100% - 55px);
+    background-color: rgba(0, 0, 0, .75);
+    padding: 12px;
+    box-sizing: border-box;
+    gap: 8px;
+}
+
+.cari {
+    display: flex;
+}
+
+.cari>input {
+    flex-grow: 1;
+}
+
+
+/* Daftar Provinsi */
+
+#drawer-kiri {
+    transform: translateX(-100%);
+}
+
+#covid-dunia {
+    max-width: 256px;
+    right: 0;
+    transform: translateX(100%);
+}
+
+.daftar {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: white;
+    padding: 0;
+}
+
+.daftar>button {
+    padding: 8px 12px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+ul li.nav {
+    display: inline-block;
+    padding: 10px 0 5 px 5px;
+}
+
+.artikel {
+    font-size: 14px;
+    padding: 12px;
+    background-color: #eee;
+    text-align: justify;
+}
+
+.navigasi {
+    background-color: #ddd;
+    padding: 5px 0 0 20px;
+}
+
+span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+li.nav a {
+    color: tomato;
+    font-size: 14px;
+}
+
+li.nav a:hover {
+    font-weight: bold;
+}
+
+#tom {
+    color: black;
+    background-color: #bbb;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#tom:hover {
+    background-color: rgb(58, 233, 58);
+}
+
+button.cari {
+    border: 1 solid black;
+    background-color: #eee;
+    color: black;
+    border-radius: 5px;
+    padding: 6px 8px;
+}
+
+button.cari:hover {
+    font-weight: bold;
+    background-color: chartreuse;
+}
+
+p.ket {
+    padding-top: 8px;
+    text-align: justify;
+}
+
+input#input {
+    width: 60%;
+    padding: 6px 0;
+    margin: 12px 0;
+}
+
+button.prov:hover {
+    font-weight: bold;
+}
+
+
+/* output */
+
+div#menampilkan,
+div.output-dunia {
+    text-align: center;
+    transition: .5s;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: scale(0) translate(-50%, -50%);
+    padding: 32px;
+    width: 70%;
+    height: 350px;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, .75);
+    color: white;
+}
+
+div#menampilkan p,
+div.output-dunia p {
+    padding: 8px;
+}
+
+
+/* putar  */
+
+#menampilkan.putar,
+.output-dunia.putar {
+    transform: scale(1) rotate(360deg) translate(-50%, -50%);
+}
+
+footer {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    box-shadow: -13px 0 10px rgba(0, 0, 0, .6), 13px 0 10px rgba(0, 0, 0, .6);
+    z-index: 0;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+    div#menampilkan,
+    div.output-dunia {
+        text-align: center;
+        transition: .5s;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: scale(0) translate(-50%, -50%);
+        padding: 32px;
+        width: 70%;
+        height: 360px;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, .75);
+        color: white;
+    }
+}
+
+
+/* Responsition Daerah */
+
+.drawer.slide {
+    transform: none !important;
+}
+
+.drawer>header {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

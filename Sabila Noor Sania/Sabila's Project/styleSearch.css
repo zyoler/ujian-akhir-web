@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+*{
+    margin: 0px;
+    padding:0;
+}
+body{
+    background-color: white;
+    background-blend-mode: soft-light;
+}
+header {
+    display: flex;
+    background-color:rgb(14, 18, 73);
+    color: white;
+    padding: 16px 24px;
+    align-items: center;
+    gap: 24px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    justify-content: space-between;
+}
+#logo {
+    font-size: 1.8rem;
+    font-family: 'Noto Serif';
+    font-weight: bold;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+nav>a:last-child {
+    margin-right:20px;
+    font-size: 20px;
+    color:white;
+    height: 38px;
+    padding: 0 20px;
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+}
+nav {
+    display: flex;
+}
+nav>a {
+    height: 38px;
+    padding: 0 20px;
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+}
+nav>a:hover {
+    background-color: rgb(9, 74, 94);
+}
+
+#search{
+    margin: 100px auto;
+    border: 4px solid rgb(14, 18, 73);
+    width:350px;
+    border-radius: 20px ;
+    height: 40px;
+}
+#coba{
+   outline: none;
+   height: 40px;
+   width: 300px;
+   border-radius: 20px; 
+   border:0;
+   text-align: center;
+}
+#klik{
+    background: transparent;
+    outline: none;
+    border:0;
+    padding-left: 10px;
+    font-size: 20px;
+    text-align: center;
+
+}
+#search:hover{
+    background:gainsboro;
+}
+div>h2{
+    padding: 50px 30px;
+    font-family:Roboto;
+}
+main{
+    justify-content: center;
+}
+#hasil{
+    background: floralwhite;
+    letter-spacing:5px;
+    margin: 10px;
+    padding:5px;
+    text-shadow: 2px 2px #ecf1d7;
+}
+#output{
+    display: flex;
+    padding: 20px 20px;
+    padding-top: 20px;
+    overflow-x:auto;
+} 
+#output a{
+    border: 10px solid gainsboro;
+    background-color: ghostwhite;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 5px;
+    text-decoration: none;
+}
+.search-result{
+    margin: 10px;
+    text-decoration: none;
+} 
+.search-result img{
+    border-radius: 8px;
+}
+.search-result h5{
+    color: black;
+    word-wrap:break-word;
+}
+.search-result p{
+    text-align: center;
+    color: black;
+}
+footer{
+    background-color: rgb(14, 18, 73)  ;
+    height: 150px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+.icon a{
+    margin: 30px;
+    color: white;
+    font-size: 35px;
+}
+.home>a{
+    text-decoration: none;
+    size: 20px;
+    margin-top: 20px;
+    color: goldenrod;
+    letter-spacing: 3px;
+}
+.copyright{
+    color: honeydew;
+}
+.copyright>a{
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,269 @@
+html,body {
+    font-family: sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+header {
+    display: flex;
+    background-color: #d2d2d4;
+    color: black;
+    padding: 16px 24px;
+    align-items: center;
+    gap: 16px;
+
+}
+
+#logo span {
+    font-size: 40pt;
+    font-family: fantasy;
+    color: tomato;
+    font-variant-caps: unset;
+}
+
+
+header div {
+    display: flex;
+    padding: 0 8px;
+}
+/* navigasi */
+#nav {
+    background-color: #000000;
+    display: grid;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#nav ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(64px, 128px));
+    text-align-last: center;
+    gap: 5px;
+}
+
+#nav a{
+    display: block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+
+#nav li:hover {
+    background-color: white;
+    color: white;
+    /* transition: all 0.5s;
+    transform: translateY(15px); */
+}
+
+a#ikon {
+    height: 38px;
+    padding: 0 20px;
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+#tombol-nav{
+    display: none;
+    border: 0px;
+    background-color: #d2d2d4;
+}
+#tombol-login {
+    margin-left: auto;
+    background-color: white;
+    color: black;
+    height: 26px;
+    padding: 0 6px;
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+/* min */
+#container-main{
+    display: flex;
+    /* flex-flow: row; */
+    align-items: center;
+    padding: 64px;
+    gap: 64px;
+    justify-content: space-between;
+}
+#container-main>*{
+    flex-basis: 100%;
+}
+#baca-koran{
+    width: 100%;
+    padding-block: 32px;
+}
+#sidebar-kiri{
+    display: flex;
+    flex-flow: column;
+    gap: 0px;
+    font-family: cursive;
+    font-size: 16pt;
+    color: white;
+}
+#sidebar-kiri button{
+    background-color: red;
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 16px 0;
+}
+#sidebar-kiri p{
+    margin: 0;
+}
+
+
+
+/* foter */
+#foot{
+    background-color: gray;
+    flex-direction: column;
+    display: flex;
+    padding: 16px;
+}
+.sosmed img{
+	height: 50px;
+}
+.sosmed ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+}
+.sosmed li{
+	display: inline-block;
+	/* text-size: 30px; */
+	padding: 10px;
+}
+.headline-img{
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+#foot div{
+    display: flex;
+    flex-direction: column;
+    font-size: 8pt;
+}
+
+#bahasa-style{
+    display: flex;
+    gap: 8px;
+    list-style-type: none;
+    direction: none;
+    /* text-decoration: none; */
+    margin: 0%;
+    font-size: 8pt;
+    box-sizing: border-box;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+#menu-style{    
+    display: flex;
+    gap: 8px;
+    align-self: center;
+    list-style-type: none;
+    direction: none;
+    /* text-decoration: none; */
+    margin: 0%;
+    font-size: 8pt;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+#menu-style>li{
+    text-decoration: none;
+}
+#fb{
+    display: flex;
+    gap: 8px;
+    list-style-type: none;
+    direction: none;
+    text-decoration: none;
+    margin: 0%;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.fb{
+	color: #737373;
+	font-size: 11px;
+	position: absolute;
+    text-align: center;
+    padding-inline-start: 320px;
+}
+/* Responsive */
+
+@media(max-width:720px){
+    #nav{
+        position: absolute;
+        top: 97px;
+        left: 0px;
+        transition: .25s;
+        transform: translateX(-100%);
+        flex-direction: column;
+    }
+    #nav ul{
+        border-radius: 0;
+        justify-content: center;
+    }
+    #tombol-login{
+        margin-left: auto;
+        background-color: white;
+        color: black;
+        height: auto;
+        padding: 0px 20px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    #nav.aktif {
+        transform: none;
+    }
+    #nav ul{
+        padding: 16px;
+        width: 25vw;
+        color: white;
+        background-color:#565656;
+    }
+    #container-main{
+        flex-direction: column;
+        padding: 32px;
+        gap: 32px;
+    }
+    #tombol-nav{
+        display: inline-block;
+    }
+    #baca-koran{
+        width: 100%;
+        padding-block: 0;
+    }
+    #foot{
+        display: inline-block;
+    }
+    #bahasa-style ul{
+        display: none;
+    }
+    #menu-style ul{
+        display: none;
+    }
+    #foot div{
+        display: flex;
+        flex-direction: column;
+        font-size: 8pt;
+    }
+}
+
+

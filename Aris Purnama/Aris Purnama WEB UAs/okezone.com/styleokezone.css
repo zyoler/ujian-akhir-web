@@ -1,0 +1,244 @@
+html,body {
+    font-family: sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    /* color: whitesmoke; */
+}
+p{
+    margin: 0;
+}
+
+marquee{
+    padding: 15px 0;
+}
+#head {
+    display: flex;
+    background-color: #184299;
+    color: black;
+    padding: 16px 44px;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid;
+}
+
+#button{
+    background: linear-gradient(to left,rgb(221, 172, 82),rgb(216, 99, 99));
+}
+#button:hover{
+    background: lightsalmon;
+}
+#logo span {
+    font-size: 40pt;
+    font-family: fantasy;
+    color: tomato;
+    font-variant-caps: unset;
+}
+.footer-menu a{
+    color: rgb(117, 102, 102);
+}
+.footer-social a{
+    color: rgb(117, 102, 102);
+}
+
+#logo-okezone{
+    width: 184px;
+    /* display: flex; */
+    box-sizing: border-box;
+}
+#ikon-akun  {
+    font-family: 'Material Icons Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 34px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    margin-left: auto;
+    color: white;
+}
+/* main */
+#container{
+    display: flex;
+    align-items: flex-end;
+    padding: 4px 64px;
+    background:linear-gradient(to right,rgb(176, 206, 233),rgb(86, 170, 170)) ;
+    align-items: center;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+}
+
+#loading {
+    margin:0px auto;
+    width:100px;
+    border: 8px solid rgb(1, 1, 22);
+    border-top: 8px solid transparent;
+    border-radius: 999px;
+    width: 40px;
+    height: 40px;
+    animation: spin-1 2s infinite linear;
+  }
+@keyframes spin-1 {
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+#container #kata{
+    display: flex;
+    margin: 0 16px;
+    background-color: aliceblue;
+    padding: 12px;
+    margin-left: auto;
+    font-size: 10pt;
+    margin: 0;
+    box-sizing: border-box;
+}
+#container div p{
+    padding: 12px;
+}
+#input-berita{
+    width: 220px;
+    height: 28px;
+    padding: 4px;
+}
+#formulir{
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 16px;
+    padding: 0 24px;
+    margin: 16px;
+    align-self: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+#out-put{
+    width: auto;
+    padding: 64px;
+    margin: 8px 64px;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin-bottom: 132px;
+}
+/* #out-put>*{
+    background-color: grey;
+} */
+
+.berita-utama{
+    color: black;
+    background-color: whitesmoke;
+
+}
+.berita-utama img{
+    width: 736px;
+    margin-top: 32px;
+}
+
+.berita-utama p{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* responsive */
+@media( max-width:1040px){
+    .berita-utama img{
+        width: 256px;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        flex-wrap: wrap;
+    }  
+    #out-put{
+        padding: 12px;
+        margin: 8px;
+    }
+    #head{
+        padding: 12px;
+    }
+    
+}
+
+
+/* Footer */
+.footer-main {
+    /* position: relative;  */
+    /* width: 100%; */
+    padding: 0 64px;
+    display: flex;
+    /* padding: 5px 20px 15px; */
+    background-color: #f4f4f4;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-main-menu {
+    /* width: 100%; */
+    display: flex;
+    /* padding: 0 220px 0 0 */
+}
+.footer-menu {
+        justify-content: space-evenly;
+        display: flex;
+        flex-wrap: wrap;
+}
+.footer-menu .footer-menu__list {
+    width: 115px;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1vw;
+}
+.footer-main__copyright{
+    display: flex;
+    align-self: center;
+    font-size: 2vw;
+}
+.footer {
+    position: relative;
+    text-align: center;
+    display: block;
+    padding: 11px 20px;
+    background-color: #414141;
+    width: auto;
+}
+.footer .footer-menu {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.footer .footer-menu ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.footer .footer-menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.footer .footer-social {
+    float: none;
+    display: block;
+    margin: 5px 0 0;
+}
+.footer .footer-social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footer .footer-social ul li {
+    margin: 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+}

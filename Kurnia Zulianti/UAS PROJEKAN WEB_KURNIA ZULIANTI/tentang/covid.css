@@ -1,0 +1,184 @@
+body {
+    background: url('covidbackground.png');
+    background-size: cover;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    background-image: linear-gradient(to right, rgb(209, 0, 70), rgb(253, 69, 109), rgb(250, 87, 155));
+    opacity: .8;
+}
+
+header img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+header h2{
+    flex: 70%;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 160%;
+    margin-left: 20px;
+}
+
+header h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+form {
+    margin: auto;
+    padding: 20px;
+    
+}
+
+button {
+    background-color: rgb(250, 87, 155); 
+    flex: 30%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+button a:hover{
+    color: white;
+}  
+
+main {
+    display: flex;
+    background-color: white;
+    opacity: .8;
+    padding: 25px;
+    margin: auto;
+    width: 80%;
+}
+
+#satu {
+    display: flex;
+    flex: 50%;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+    line-height: 1.44;
+}
+
+#prg {
+    flex: 50%;
+    margin-left: 70px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+#satu img {
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 90%;
+    height: 90%;
+    align-items: center;
+}
+
+#gmb {
+    flex: 50%;
+    margin-top: 100px;
+    margin: 50px; 
+    align-items: center;
+}
+
+#dua {
+    display: flex;
+    flex: 50%;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+    line-height: 1.44;
+}
+
+#dua img {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 90%;
+    height: 40%;
+}
+
+#gejala {
+    flex: 50%;
+    margin-right: 70px;
+    text-align: justify;
+}
+
+#gb {
+    flex: 50%;
+    margin: 50px;
+    align-items: center; 
+}
+
+#crn {
+    margin-top: 50px;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+}
+
+footer p {
+    font-family: sans-serif;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    main {
+        display: block;
+        margin: auto;
+    }
+
+    #satu {
+        display: block;
+        padding: 0;
+        margin: 0;
+    } 
+
+    #prg {
+        margin: auto;
+        padding: 30px;
+    }
+
+    #gmb {
+        margin: auto;
+    }
+    
+    #dua {
+        display: block;
+    }
+
+    #gb {
+        margin: auto;
+    }
+
+    #gejala {
+        margin: auto;
+        padding: 30px;
+    }
+}

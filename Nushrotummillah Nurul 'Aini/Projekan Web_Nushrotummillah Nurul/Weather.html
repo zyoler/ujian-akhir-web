@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="NavbarStyle.css">
+    <link rel="stylesheet" href="WeatherStyle.css">
+    <link rel="stylesheet" href="FooterStyle.css">
+</head>
+<body>
+    <header>
+        <div>
+            <span id="tanggal"></span>
+        </div>
+        <nav>
+            <div class="logo">
+                <h4>Weather Forecast</h4>
+            </div>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Weather.html">Weather Forecast</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div>
+            <img src="image/search.png" alt="Search">
+            <h2>Search Weather Forecast</h2>
+            <p>See the weather in your city the one you want to visit.</p>
+        </div>
+    </section>
+    <main>
+        <form>
+            <label for="provinsi">Provinsi: </label>
+            <select id="provinsi" onchange = "kabupaten()">
+                <option value="">-Pilih Provinsi-</option>
+            </select>
+            <br><br>
+            <label for="kota">Kota/Kabupaten:  </label>
+            <select id="kota">
+                <option value="">-Pilih Kabupaten/Kota-</option>
+            </select>
+        </form>
+        <h3 id="tempat"></h3>
+        <div>
+            <article>
+                <span id="cuaca"></span>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <small>Copyright &copy; 2021 - Nushrotummillah Nurul 'Aini.</small>
+        </div>
+    </footer>
+    <script src="NavbarScript.js"></script>
+    <script src="WeatherScript.js"></script>
+</body>
+</html>

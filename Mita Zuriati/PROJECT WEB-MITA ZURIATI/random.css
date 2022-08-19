@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #aaaabb;
+    font-family: 'Montserrat', sans-serif;
+} 
+#logo{
+    font-size: 3rem;
+    font-family: 'Berkshire Swash', cursive;
+    text-decoration: none;
+    color: #aaaabb;
+    padding:20px 20px;
+}
+header{
+    background: url('gambar/walpaper.jpg') no-repeat;
+    width:100%;
+    background-size:cover;
+    background-position:center;
+    background-color:#9999bb;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 10;
+}
+nav{
+    background-color: navy;
+    align-items:center;
+}
+nav>ul{
+    display:flex;
+    justify-content: space-evenly;
+}
+ul {
+    margin:0px;
+    padding:0px;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+ul li {
+    float:left;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+    text-align: center;
+    background-color:navy;
+    gap:20px;
+} 
+ul li:hover ul li {
+    display: block;
+    opacity: .9;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+   
+ul li a:hover {
+    background-color: rgb(3, 3, 196);
+}
+
+ul li ul li{
+    display: none;
+}
+
+li form input{
+    height:25px;
+    margin-left:20px;
+    border-radius:3px;
+    border-style: none;
+}

@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: auto;
+}
+
+
+body{
+    background-color: grey;
+    font-size: 18px;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    margin: 50px;
+} 
+
+
+/* load */
+
+ .loader{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: grey;
+    transition: all 0.5s;
+  } 
+  .loader .ring{
+    height: 45px;
+    width: 45px;
+    border: 5px solid grey;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .loader .ring:after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #ff3d00;
+    border-top-color: transparent;
+    animation: rotate 1.5s linear infinite;
+  }
+  @keyframes rotate {
+    
+    100%{
+    opacity: 1;
+      transform: rotate(360deg);
+    }
+  }
+
+/* container */
+.container{
+    display: grid;
+    gap: 10px;
+}
+
+/*header*/
+.header{
+    display: grid;
+    grid-template-areas: 
+    'hero hero feature-1'
+    'hero hero feature-2'
+    ;
+}
+.hero{
+    grid-area: hero;
+    min-height:350px;
+    background-image:url(../img/head.png);
+    background-size: cover;
+    background-position:center ;
+    padding: 50px;
+}
+
+.hero > *{
+    display: none;
+}
+
+.features{
+    background-color: #000;
+    color: white;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.feature-1{
+    grid-area: feature-1;
+    background-image:url(../img/galery-1.jpg) ;
+    background-size: cover;
+}
+
+.feature-2{
+    grid-area: feature-2;
+    background-image:url(../img/galery-2.jpg);
+    background-size: cover;
+}
+
+.feature .price{
+    font-size: 3em;
+    font-weight: 200; 
+}
+
+
+
+
+
+/* Navigasi */
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    
+}
+
+.menu .brand{
+    font-size: 1.2em;
+    color: #333;
+}
+ 
+.menu ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+    list-style: none;
+    gap:5px;
+
+}
+
+.menu a, .services .service a{
+    display: block;
+    background-color: greenyellow;
+    color: green;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 0,9em;
+}
+
+
+/* produk */
+
+.container-dua{
+    max-width: 800px;
+    margin: 50px auto;
+    margin-bottom: 20px;
+}
+
+.layanan{
+    padding: 20px;
+    box-sizing: border-box;
+}
+.layanan.satu{
+    background-color: blue;
+}
+.layanan.dua{
+    background-color: brown;
+}
+.layanan.tiga{
+    background-color: chartreuse;
+}
+
+/*Barang*/
+
+img{
+    width: 100%;
+}
+
+.services{
+    display: grid; 
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+}
+
+.service{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid#aaa;
+    border-radius: 3px;
+    box-shadow: turquoise;
+
+}
+
+.service .icon{
+    font-size: 3em;
+
+}
+
+.service h3{
+    font-size: 2em;
+}
+
+.service p{
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+/* maps */
+
+div#maps h4, div#maps p{
+    text-align: center;
+
+}
+
+/* Pesanan */
+
+.pesanan {
+    padding: 1em;
+    margin: 2em auto;
+    width: 17em;
+    background: #fff;
+    border-radius: 3px;
+  }
+  
+  label {
+    font-size: 10pt;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  textarea, 
+  select {
+    padding: 8px;
+    width: 95%;
+    background: #efefef;
+    border: 0;
+    font-size: 10pt;
+    margin: 6px 0px;
+  }
+  
+  .tombol, .tombol a {
+    background: #3498db;
+    color: #fff;
+    border: 0;
+    padding: 5px 8px;
+    text-decoration: none;
+  }
+
+/* Footer */
+
+#footer {
+    background: lightgreen;
+    padding: 0 0 30px 0;
+    color: darkgreen;
+    font-size: 14px;
+  }
+
+
+  #footer .footer-top .footer-info {
+    margin-bottom: 15px;
+    background: #191919;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+  }
+   
+  #footer .footer-top .footer-info h3 {
+    font-size: 36px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+  
+  #footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  #footer .copyright, #footer div.footer-top {
+    border-top: 1px solid #262626;
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  
+  @media (max-width: 575px) {
+    #footer .footer-top .footer-info {
+      margin: -20px 0 30px 0;
+    }
+  }
+  
+.bg-dark{
+    border: 5px solid;
+    width: 300px;
+    height: 400px;
+}
+.sebelah .row {
+    border: lightgreen;
+    display: flex;
+    flex-direction: row;
+    justify-items: center ;
+    flex-wrap: wrap;
+    text-align: center;
+ }
+
+/* Responsive */
+
+@media (max-width:1024px){
+    .menu{
+        order:inherit;
+        grid-template-columns: 1fr;
+    }
+    .menu .brand{
+        display: none;
+    }
+    .hero > *{
+        display: block;
+        background-color: gray;
+        color: honeydew;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}        
+
+@media screen and (max-width:768px){
+    .menu{
+        order: -1;
+        justify-items: end;
+    }
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 15vh;
+        width: 100%;
+        align-items: center;
+        background-color: rgb(0, 78, 78);    
+        z-index: 1;
+        transform: translateX(0);
+        transition: all 1s;
+        opacity: 1;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    nav ul.slide{
+        opacity: 1;
+        transform: translateX(0);
+    }  
+}
+
+/* tulisan mlaku
+<marque></marque> */

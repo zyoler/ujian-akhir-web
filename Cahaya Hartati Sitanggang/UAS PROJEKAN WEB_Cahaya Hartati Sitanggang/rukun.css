@@ -1,0 +1,98 @@
+body{
+    background-image: url(https://drscdn.500px.org/photo/25656781/m%3D900/9e56eb36234dfa37e7396832f324c290);
+    height: 360px;
+    background-position: center;
+    background-size:cover;
+    margin: 0;
+}
+header{
+    background: linear-gradient(rgb(97, 171, 250),white);
+    opacity: .8;
+    padding: 20px 0;
+    display: flex;  
+}
+header h1{ 
+    margin: auto;
+    padding-left: 120px;
+   
+}
+
+button {
+    border-radius: 10px;
+    background:linear-gradient(rgb(97, 171, 250),white) ;
+    height: 30px;
+}
+button a{
+    color: black;
+    padding:10px;
+    font-weight: bold;
+    text-decoration: none;
+   
+}
+button a:hover{
+    color:rgb(255, 0, 0);
+}
+
+img{
+    display: flex;
+    margin: auto;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+#output{
+    background-color: white;
+    opacity: .8;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+#output a{
+    color: black;
+    margin-left: 15%;
+}
+#output a:hover{
+    background: rgb(75, 148, 233);
+
+}
+p{
+    text-align: justify;
+    padding-bottom: 7px;
+    margin: 0 20px;
+    padding-top: 8px;
+}
+h4{
+    padding-bottom: 5px;
+    margin: 0 20px;
+}
+.arab{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#syarat{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+ 
+@media screen and(max-width :768px){
+    header h1{ 
+        text-align: center;
+        margin: auto;
+     
+    } 
+    
+    header{
+        background: linear-gradient(rgb(101, 140, 248),white);
+        opacity: .8;
+        padding: 20px 0;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+ 
+    }
+    
+}

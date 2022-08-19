@@ -1,0 +1,256 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #aaaabb;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    padding-bottom: 90px;
+    min-height: 100vh;
+} 
+#logo{
+    font-size: 1.5rem;
+    font-family: 'Berkshire Swash', cursive;
+    text-decoration: none;
+    color: #bbbbcc;
+    padding:20px 20px;
+}
+header{
+    background: url('gambar/picture.jpg') no-repeat;
+    width:100%;
+    background-size:cover;   
+    background-position:center;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 100;
+}nav{
+    font-size: 1rem;
+    display: flex;
+    color: snow;
+    background-color: navy;
+    justify-content: space-around;
+    height:50px;
+    align-items: center;
+}
+nav ul{
+    width:50%;
+    display: flex;
+    list-style:none;
+    justify-content: space-between;
+}
+nav ul li a{
+    color:snow;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color:lightblue;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: lightblue;
+}
+a i{
+    font-size: 20px;
+}
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height:20px;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-toggle input{
+    position: absolute;
+    width:40px;
+    height:28px;
+    right:-6px;
+    top:-3px;
+    opacity:0;
+    z-index: 2;
+}
+.menu-toggle span{
+    display: block;
+    width:28px;
+    height:3px;
+    background-color: snow;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 0;
+}
+.menu-toggle input:checked~span:nth-child(2){
+    background-color: white;
+    transform:rotate(45deg)translate(-1px,-1px);
+}
+.menu-toggle input:checked~span:nth-child(3){
+    transform:scale(0);
+}
+.menu-toggle input:checked~span:nth-child(4){
+    background-color: white;
+    transform:rotate(-45deg)translate(-2px,0);
+}
+@media screen and (max-width:768px){
+    nav ul{
+        display: 50%;
+    }
+}
+@media screen and (max-width:576px){
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul{
+        position: absolute;
+        left:-20px;
+        top:32px;        
+        width:30%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: -1;
+        background-color: navy;
+        transform:translateX(-90%);
+        transition: all 1s;
+        opacity: 0;
+    } 
+    nav ul.slide{
+        opacity: 1;
+        transform:translateX(0)
+    }
+}
+
+main{
+    margin-top:80px;
+}
+#artikel{
+    text-align: center;
+}
+.top{
+    background-color:navy;
+    color:orangered;
+    padding: 1px 5px;
+    height: 30px;
+    padding:8px 20px;
+    font-size: 1.2rem;
+}
+
+main hr{
+    border-color: #444466;
+}
+article{
+    display: flex;
+}
+#box-info{
+    text-align: center;
+}
+#more-info{
+    display: flex;
+    justify-content: space-evenly;   
+}
+.basedOnInfo{
+    width:500px;
+    padding:10px 10px;
+    color:white;
+    box-shadow: 0 3px 5px black;
+    background-color: #555577;
+    margin-bottom: 30px;
+}
+#more-info h3{
+    color:rgb(218, 2, 2);
+}
+#more-info div a{
+    background-color: orangered;
+    border:solid;
+    border-color: black;
+    color:snow;
+    width: 100px;
+    padding:2px 2px;
+    border-radius: 10%;
+}
+#more-info div{
+    margin-top:10px;
+}
+#more-info a:hover{
+    background-color: orange;
+}
+#output{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#output .basedOn{
+    width:250px;
+    padding:8px 5px;
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+    color:white;
+    background-color: #444466;
+    box-shadow: 0 3px 5px black;
+    text-align: center;
+}
+#output button{
+    background-color: navy;
+    border:solid;
+    border-color:white;
+    color:snow;
+    width: 100px;
+    padding:10px;
+    border-radius: 10%;
+}
+#output button:hover{
+    background-color:steelblue;
+    border: solid;
+    border-color:black;
+    color:black;
+}
+#output button:focus{
+    background-color:steelblue;
+    border: solid;
+    border-color:black;
+    color:black;
+}
+footer{
+    padding:5px 0;
+    background-color:navy;
+    position: absolute;
+    bottom:0;
+    width:100%;
+}
+footer .icon{
+    text-align: center;
+}
+footer .icon a{
+    color: white;
+    border: 1px solid #ccc;
+    width:30px;
+    height:30px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 30%;
+    margin: 0 8px;
+}
+footer .icon a:hover{
+    color:navy;
+    background-color: snow;
+}
+footer .copyright{
+    text-align: center;
+    font-size: 0.7rem;
+    color:whitesmoke;
+}
+form button{
+    background-color: transparent;
+    outline: none;
+    margin-top: 3px;
+    border: 0;
+}

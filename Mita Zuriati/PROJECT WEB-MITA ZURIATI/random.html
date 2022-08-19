@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Movie</title>
+    <link href="gambar/icon.png" rel="icon">
+    <link href="gambar/icon.png" rel="apple-touch-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <a href="#" id="logo">Film Movie</a>  
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Genre</a>
+            <ul>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Adventure</a></li>
+                <li><a href="#">Comedy</a></li>
+                <li><a href="#">Drama</a></li>
+                <li><a href="#">Horror</a></li>
+                <li><a href="#">Thriller</a></li>
+                <li><a href="#">History</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Negara</a>
+            <ul>
+                <li><a href="#">Indonesia</a></li>
+                <li><a href="#">Inggris</a></li>
+                <li><a href="#">Cina</a></li>
+                <li><a href="#">Korea</a></li>
+                <li><a href="#">Amerika</a></li>
+                <li><a href="#">Hongkong</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Tahun</a>
+            <ul>
+                <li><a href="#">2011</a></li>
+                <li><a href="#">2012</a></li>
+                <li><a href="#">2013</a></li>
+                <li><a href="#">2014</a></li>
+                <li><a href="#">2015</a></li>
+                <li><a href="#">2016</a></li>
+                <li><a href="#">2017</a></li>
+                <li><a href="#">2018</a></li>
+                <li><a href="#">2019</a></li>
+                <li><a href="#">2020</a></li>
+                <li><a href="#">2021</a></li>
+            </ul>
+            </li>
+            <li>
+                <form>
+                    <input type="text" placeholder="Type to search">
+                </form>
+            </li>     
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <div id="output"></div>
+    </main>
+    <script>
+        const elemenOutput = document.querySelector('#output');
+            elementOutput.innerHTML="";
+            fetch('http://api-lk21.herokuapp.com/genre?genre=action')
+            .then(function(response){
+                return response.json();
+            }).then(function(json){     
+                
+                for(let i=0;i<20.length;i++){
+                const elemendiv=document.createElement('div');
+                elemendiv.className='latest';
+
+                const elemenGambar=document.createElement('img');
+                elemenGambar.src=json.result[i].thumbnail;
+                elemendiv.appendChild(elemenGambar);
+                
+                const elemenparagraf=document.createElement('p');
+                elemenparagraf.textContent='Title : ' + json.result[i].title+'\nTrailer : '+json.result[i].trailer;
+                elemendiv.appendChild(elemenparagraf);
+                
+                const  elemenEnter=document.createElement('br');
+                elemendiv.appendChild(elemenEnter)
+
+                
+                elemenOutput.appendChild(elemendiv);
+            });
+    </script>
+
+</body>
+</html>

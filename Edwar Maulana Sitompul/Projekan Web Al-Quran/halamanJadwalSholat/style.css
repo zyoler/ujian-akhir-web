@@ -1,0 +1,123 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url('../halamanJadwalSholat/leaves.png');
+}
+
+header {
+    display: flex;
+    background-image: url('../halamanJadwalSholat/flower-dark.png');
+    color: white;
+    align-items: center;
+    height: 120px;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+#beranda {
+    text-decoration: none;
+    color: white;
+}
+
+#beranda:hover {
+    color: #fed330;
+}
+
+table {
+    margin-top: 50px;
+    border: 5px solid #10ac84;
+    border-collapse: collapse;
+    width: auto;
+}
+
+table>thead {
+    line-height: 30px;
+    background-color: #10ac84;
+    color: white;
+    border: 3px solid;
+}
+
+table>th,
+td {
+    border: 3px solid #00d2d3;
+}
+
+#tabel-pilihan {
+    background-color: #26de81;
+    color: black;
+}
+
+button {
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #fed330;
+}
+
+
+#id-kota {
+    font-weight: bold;
+    padding: 6px 0px;
+}
+
+#untuk-tabel {
+    display: flex;
+    justify-content: center;
+}
+
+.wrap{
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: black;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+footer div {
+    margin: 5px;
+}
+
+footer>div p {
+    display: flex;
+    color: whitesmoke;
+    font-size: medium;
+    font-style: oblique;
+    text-align: center;
+    justify-content: center;
+}
+
+footer>div ul {
+    display: flex;
+    justify-content: center;
+    margin-left: -40px;
+}
+
+footer>div>ul li {
+    display: flex;
+    list-style: none;
+    display: inline;
+}
+
+footer>div>ul img {
+    display: flex;
+    width: 50px;
+    display: inline;
+    margin: 10px;
+}
+
+.footerDesign{
+    display: flex;
+    background-color: #10ac84;
+    font-weight: bold;
+    font-style: inherit;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+}

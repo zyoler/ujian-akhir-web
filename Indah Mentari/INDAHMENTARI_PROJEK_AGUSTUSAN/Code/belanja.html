@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BELANJA</title>
+</head>
+<body>
+        <p><a href="lomba.html">BERANDA</a></p>
+
+
+        <div class="container">
+            <div class="row"></div>
+        </div>
+        <!-- End constent -->
+        <!-- <Script src="js/jquery-3.6.0.min.js"></Script>     -->
+        <script>
+            fetch('https://wijuna.com/api/produk').then(function(res) {
+                return res.json();
+            }).then(function(res){
+                for(i = 0; i < res['data']['data'].length; i++){
+                    document.querySelector('.container .row').innerHTML +=
+                                '<div class="col-lg-4 mt-2 produk'+ i +'">'+
+                                    '<div class="MyCard text-light p-2">'+
+                                        '<img class="bg-dark" src="https://wijuna.com/' + res['data']['data'][i]['thumbnails'] + '" alt="Product">'+
+                                        '<div class="MyCard-footer">'+
+                                            '<span class="SpanTitle">'+ res['data']['data'][i]['name'] +'</span>'+
+                                            '<br>'+
+                                            '<span class="spanPrice"> Rp. '+ res['data']['data'][i]['harga'] +'</span>'+
+                                        '</div>'+
+                                    '</div>' +
+                                '</div>';
+                    document.querySelector('.produk' + i).addEventListener("click", myFunction);
+                }        
+            })
+            function myFunction()
+                {
+                    console.log('Ok');
+                }
+        </script><div class="container">
+        <div class="row"></div>
+    </div>
+    <!-- End constent -->
+    <!-- <Script src="js/jquery-3.6.0.min.js"></Script>     -->
+    <script>
+        fetch('https://wijuna.com/api/produk').then(function(res) {
+            return res.json();
+        }).then(function(res){
+            for(i = 0; i < res['data']['data'].length; i++){
+                document.querySelector('.container .row').innerHTML +=
+                            '<div class="col-lg-4 mt-2 produk'+ i +'">'+
+                                '<div class="MyCard text-light p-2">'+
+                                    '<img class="bg-dark" src="https://wijuna.com/' + res['data']['data'][i]['thumbnails'] + '" alt="Product">'+
+                                    '<div class="MyCard-footer">'+
+                                        '<span class="SpanTitle">'+ res['data']['data'][i]['name'] +'</span>'+
+                                        '<br>'+
+                                        '<span class="spanPrice"> Rp. '+ res['data']['data'][i]['harga'] +'</span>'+
+                                    '</div>'+
+                                '</div>' +
+                            '</div>';
+                document.querySelector('.produk' + i).addEventListener("click", myFunction);
+            }        
+        })
+        function myFunction()
+            {
+                console.log('Ok');
+            }
+    </script>
+
+       </body>
+</html>

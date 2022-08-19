@@ -1,0 +1,148 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url('./john-peters-CieLxkCC_Qc-unsplash.jpg');
+}
+
+@media screen and (max-width: 1080px) {}
+
+.wrap {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-wrap: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 250px;
+    border-radius: 20px;
+}
+
+#untuk-input {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#untuk-input nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#untuk-input>nav>form input {
+    outline: none;
+    padding: 18px 32px;
+    border-radius: 10px;
+    width: 500px;
+    font-size: 28px;
+    color: whitesmoke;
+    background-image: url('./john-peters-CieLxkCC_Qc-unsplash.jpg');
+}
+
+#nama-nabi::-webkit-input-placeholder {
+    color: turquoise;
+}
+
+#untuk-input>nav>form button {
+    background-image: url('./search.png');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    padding: 30px 10px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    width: 60px;
+    cursor: pointer;
+}
+
+#output-css {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    background-image: url('./brushed_alu_dark.png');
+    margin-top: 30px;
+    justify-content: center;
+}
+
+#output-css>nav {
+    display: flex;
+    background-color: whitesmoke;
+    text-align: center;
+    margin: 20px;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+#output-css article {
+    background-image: url('../kisahNabi/linedpaper.png');
+    text-align: justify;
+    margin: 20px;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+a:hover {
+    color: yellowgreen;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: black;
+    justify-content: center;
+}
+
+footer div {
+    margin: 5px;
+}
+
+footer>div p {
+    display: flex;
+    color: whitesmoke;
+    font-size: medium;
+    font-style: oblique;
+    text-align: center;
+    justify-content: center;
+}
+
+footer>div ul {
+    display: flex;
+    justify-content: center;
+    margin-left: -50px;
+}
+
+footer>div>ul li {
+    display: flex;
+    list-style: none;
+    display: inline;
+}
+
+footer>div>ul img {
+    display: flex;
+    width: 50px;
+    display: inline;
+}
+
+.footerDesign{
+    display: flex;
+    background-color: #0fb9b1;
+    font-weight: bold;
+    font-style: inherit;
+    align-items: center;
+    text-align: center;
+}

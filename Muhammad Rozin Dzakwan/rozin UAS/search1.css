@@ -1,0 +1,35 @@
+.terserah {
+    position: relative;
+    width: 100%;
+    padding: 75px 0;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+    font-size: 4vw;
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif\ ;
+
+}
+
+.terserah button {
+    display: inline-flex;
+    border: 5px solid;
+    align-items: center;
+    margin: .25em auto;
+    padding: 0 1em;
+    line-height: initial;
+    width: 300px;
+    height: 100px;
+    background-color: red;
+    color: black;
+}
+
+.terserah button a {
+    font-size: 40px;
+    text-decoration: none;
+    color: blanchedalmond;
+}
+.terserah button:hover{
+    opacity: 0.7;
+}

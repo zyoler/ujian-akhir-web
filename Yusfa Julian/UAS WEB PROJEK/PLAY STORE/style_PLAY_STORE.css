@@ -1,0 +1,280 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* My style */
+
+body {
+    margin-top: 70px;
+    font: 16px/28px arial, sans-serif;
+    color: #333;
+    background-color: #eee;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background-color: #bbb;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .6);
+    box-sizing: border-box;
+}
+
+header {
+    padding: 0 0 10px 20px;
+}
+
+div.logo img {
+    width: 32px;
+    height: 32px;
+    border: none;
+    margin-right: 0;
+}
+
+h1.namaweb {
+    display: inline-block;
+    font-family: serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: -9px 5px 5px rgba(0, 0, 0, .6);
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    width: 100%;
+    height: 24px;
+    margin-right: 18px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding-right: 100px;
+}
+
+form {
+    display: flex;
+    margin: auto;
+    padding: 0;
+    margin-right: 500px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    height: 24px;
+}
+
+button:hover {
+    background-color: rgb(28, 236, 28);
+    cursor: pointer;
+}
+
+main {
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.daftar-aplikasi {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 16px 0;
+}
+
+
+/* Output */
+
+.aplikasi {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.aplikasi>h3 {
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 96px;
+}
+
+p {
+    color: red;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.aplikasi>button {
+    margin-top: auto;
+}
+
+@media screen and (max-width: 1100px) {
+    h1.namaweb {
+        display: inline-block;
+        text-shadow: -9px 5px 5px rgba(0, 0, 0, 0);
+        color: rgba(0, 0, 0, 0);
+    }
+    input {
+        width: 100px;
+        height: 24px;
+        margin-right: 8px;
+        padding: 12px 0;
+        border-radius: 5px;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+}

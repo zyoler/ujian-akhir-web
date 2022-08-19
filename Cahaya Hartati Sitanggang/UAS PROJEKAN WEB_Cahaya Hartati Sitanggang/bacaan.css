@@ -1,0 +1,84 @@
+body{
+    background-image: url(https://images.fineartamerica.com/images-medium-large-5/sunset-at-mosque-wwwimagesbyhafizcom.jpg);
+    height: 362px;
+    background-position: center;
+    background-size:cover;
+    margin: 0;
+}
+
+header{
+    background: linear-gradient(rgb(250, 158, 97),white);
+    opacity: .8;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+}
+header h1{ 
+    margin: auto;
+    padding-left: 150px;
+}
+button {
+    border-radius: 10px;
+    background:linear-gradient(rgb(250, 158, 97),white) ;
+    height: 30px;
+}
+button a{
+    padding:10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+   
+}
+button a:hover{
+   color: rgb(255, 0, 0);
+    
+}
+
+.baca p{
+    text-align: center;
+
+}
+
+#output{
+    background-color: white;
+    opacity: .8;
+    margin: auto;
+    padding: 20px;
+    width: 60%;
+}
+
+
+.judul{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.tengah{
+    font-size: 15px;
+    text-align: center; 
+    font-weight: bold; 
+    margin-bottom: 30px;
+}
+
+.latin{
+    margin-bottom: 30px;
+    text-align: justify; 
+}
+
+@media screen and(max-width :768px){
+    header h1{ 
+        text-align: center;
+        margin: auto;
+     
+    } 
+    
+    header{
+        background: linear-gradient(rgb(101, 140, 248),white);
+        opacity: .8;
+        padding: 20px 0;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+ 
+    }
+}

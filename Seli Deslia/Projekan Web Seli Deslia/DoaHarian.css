@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    background: linear-gradient(to right,pink,#b9995c);
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 16px;
+    box-shadow: 2px 5px 4px #353b48;;
+    padding-left: 24px;
+}
+button{
+    border-radius: 8px;
+    width: 100px;
+    height: 36px;
+    border-style: none;
+    background-color: wheat;
+}
+button:hover{
+    background-color: pink;
+    cursor: pointer;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: 80px;
+    height: 80px;
+}
+.arab{
+    font-size: 40px;
+}
+#out-put{
+    position: absolute;
+    left:100px;
+    top: 85px;
+}
+#out-put div{
+    padding: 16px;
+    background: linear-gradient(to left,wheat,white);
+}
+p{
+    text-align: center;
+}
+
+@media(max-width:578px){
+    #out-put{
+        left: 0;
+        top: 90px;
+    }
+}

@@ -1,0 +1,212 @@
+@font-face{
+    font-family: chelsea;
+    src:url(ChelseaMarket-Regular.ttf)
+  }
+  
+html{
+    overflow-x: hidden;
+}
+body{
+	font-family: chelsea;
+	background: url(trioGrayRaven.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.kelas{
+    width: 100%;
+}
+  
+.kotak_anime{
+    align-items: center;
+    display: contents;
+}
+
+
+.kotak_dbAnime{
+    display: contents;
+    border-radius: 6px;
+	direction: ltr;
+    width: 155px;
+    background: gray;
+    box-shadow:  0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+	margin-left: 1100px;
+    margin-top: -90px;
+	padding: 20px 30px;
+    line-height: 1.34;
+    background-color: rgb(22, 20, 160);
+    border-radius: 8px;
+}
+ 
+.kotak_genre{
+    display: contents;
+    border-radius: 6px;
+	direction: ltr;
+    width: 155px;
+    background: gray;
+    box-shadow:  0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+	margin-left: 600px;
+    margin-top: -90px;
+	padding: 20px 30px;
+    line-height: 1.34;
+    align-items: center;
+    background-color: rgb(22, 20, 160);
+    border: none;
+    border-radius: 8px;
+}
+
+main img{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 40px;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow:  0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 20px;
+    margin-top: 10px;  
+    border: solid black;
+    background-color: rgb(49, 60, 160);
+}
+
+header.pilih{
+    position: fixed;
+    border: solid black;
+    position: relative;
+    bottom: 5px;
+    background: url(./a8135ae.png);
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;    
+}
+
+.pilih img{
+    position: relative;
+    bottom: 5px;
+}
+
+body div .latar{
+    background: url(./trioGrayRaven.png);
+}
+
+.tombolMAL{
+	color: rgb(255, 255, 255);
+	padding: 10px 0px;
+    margin-block-start: 10px;
+    background-color: #69e0ff;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border: solid rgba(136, 125, 125, 0.555);
+    border-radius: 10px;
+    margin-bottom:15px ;
+}
+
+.tombolMAL:hover{
+    background: url(./download.png) center no-repeat, 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    text-shadow: 0 0 10px rgba(63, 62, 62, 0.733), 0 0 20px rgba(63, 62, 62, 0.733), 0 0 40px rgba(63, 62, 62, 0.733);
+    color: black;
+}
+
+.gambarMAL{
+    border: 0;
+    color: #1c1e21;
+    direction: ltr;
+    line-height: 1.34;
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 20px;
+    flex-direction:column-reverse;  
+    display: flex;  
+}
+
+.underMAL{
+    color: rgb(22, 34, 145);
+    padding-top: 0;
+    margin-top: 0px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+main video{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 40px;
+    box-shadow:  0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 20px;
+    border: solid black;
+    width: 1150px;
+    margin-left: 80px;
+    margin-top: 25px;
+}
+
+.latar{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.kilimanjaro_area {
+    position: relative;
+    z-index: 1;
+}
+
+.kilimanjaro_bottom_header_one {
+    background: url(./89a8f33.png);
+    background-size: cover;
+    border: solid black;
+    border-radius: 20px;
+}
+
+.section_padding_50 {
+    padding: 10px 0;
+}
+
+.kilimanjaro_bottom_header_one p {
+    color: rgb(73, 9, 250);
+    margin: 0;
+}
+
+.kilimanjaro_bottom_header_one a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    /* display: -ms-flexbox; */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-12{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-12 img:hover{
+    box-shadow: 0 0 10px rgba(63, 62, 62, 0.733), 0 0 20px rgba(37, 31, 31, 0.733), 0 0 40px rgba(63, 62, 62, 0.733);
+    padding: 0;
+    border-radius: 25%;
+}
+
+.text-center {
+    text-align: center !important;
+}

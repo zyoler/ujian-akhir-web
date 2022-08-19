@@ -1,0 +1,39 @@
+/* all */
+body {
+    background-color: rgb(6, 46, 49);
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+
+
+/* header */
+#layout {
+    background-color: rgb(67, 81, 90);
+    width: 900px;
+    margin: auto;
+    padding: 5px;
+    text-align: left;
+}
+header {
+    background-color: rgb(81, 97, 65);
+    height: 150px;
+    width: 100%;
+    position: relative;
+}
+.header {
+    height: 150px;
+    width: 100%;
+}
+
+
+/* nav */
+
+
+
+/* main */
+
+
+
+/* footer */

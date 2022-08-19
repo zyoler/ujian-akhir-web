@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Beranda</title>
+</head>
+
+<body>
+    <nav>
+        <header>
+            <marquee>
+                <h1>--------------ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ-------------</h1>
+            </marquee>
+            <a href="home.html" id='logo'>Islamic Web</a>
+        </header>
+        <ul>
+            <li class="navbar"><a href="home.html">Beranda</a></li>
+            <li class="navbar"><a href="MenuUtama.html">Kategori</a></li>
+            <li class="navbar"><a href="Tentang.html">Tentang</a></li>
+        </ul>
+        <div class="menu-hamberger">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+
+        <div id='kata-kata'>
+            <p>"Kebanyakan dari kita tidak mensyukuri <br> apa yang sudah kita miliki,<br> tetapi kita menyesali apa
+                yang belum kita capai."</p>
+        </div>
+        <div id='tampilShalat'>
+            <h3>Jadwal Shalat Kota Bandung hari ini</h3>
+            <ul id='jadwal-shalat'>
+            </ul>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>QUOTES <br>A heart full of gratitude, not only the greatest virtue, but is also the parent o f all other
+            virtues <br>@2021 Seli Deslia</p>
+    </footer>
+    <script src='jadwalShalat.js'></script>
+    <script>
+        const menuHamberger = document.querySelector('.menu-hamberger input');
+        const nav = document.querySelector('nav ul');
+
+        menuHamberger.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        });
+    </script>
+</body>
+
+</html>

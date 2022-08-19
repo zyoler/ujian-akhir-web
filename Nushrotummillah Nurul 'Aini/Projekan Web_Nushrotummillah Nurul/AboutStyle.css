@@ -1,0 +1,36 @@
+.about{
+    padding: 150px 0;
+    background-color: rgb(176, 218, 255);
+    color: rgb(65, 65, 65);
+}
+.about img{
+    width: 150px;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px gray;
+    margin-bottom: 10px;
+}
+.about div h2{
+    margin-bottom: 10px;
+}
+.about div p{
+    font-size: 15px;
+}
+.about div{
+    padding: 0 50px;
+}
+main{
+    text-align: center;
+    background-color: aliceblue;
+    padding: 100px;
+}
+main p{
+    text-align: center;
+    font-style: italic;
+    font-size: large;
+}
+main img{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}

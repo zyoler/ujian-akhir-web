@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+    https://cuaca.umkt.ac.id/
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERKIRAAN CUACA</title>
+</head>
+
+<body>
+    <h2 id="judul"></h2>
+    <h3 id="tanggal"></h3>
+    Tanggal: <input type="text" id="input-tanggal">
+    <ul id="jadwal-shalat"></ul>
+    <script>
+        const elemenJudul = document.querySelector('#judul');
+        const elemenTanggal = document.querySelector('#tanggal');
+        const elemenInputTanggal = document.querySelector('#input-tanggal');
+        const elemenJadwalShalat = document.querySelector('#jadwal-shalat');
+
+        const sekarang = new Date();
+        elemenInputTanggal.value = sekarang.getDate();
+
+        elemenInputTanggal.onchange = perbaruiJadwal;
+
+        perbaruiJadwal();
+
+        function perbaruiJadwal() {
+            console.log('Tanggal telah berubah.');
+            elemenJadwalShalat.innerHTML = '';
+
+            fetch('https://api.myquran.com/v1/sholat/jadwal/1219/' + sekarang.getFullYear() + '/' + (sekarang.getMonth() + 1) + '/' + elemenInputTanggal.value)
+                .then(function(response) {
+                    return response.json();
+                }).then(function(json) {
+
+                    elemenJudul.textContent = 'Jadwal Shalat ' + json.data.lokasi;
+                    elemenTanggal.textContent = json.data.jadwal.tanggal;
+
+                    function buatElemenShalat(nama, waktu) {
+                        const elemenShalat = document.createElement('li');
+                        elemenShalat.textContent = nama + ' pukul ' + json.data.jadwal[waktu] + ' WIB';
+                        elemenJadwalShalat.appendChild(elemenShalat);
+                    }
+
+                    buatElemenShalat('Subuh', 'subuh');
+                    buatElemenShalat('Zuhur', 'dzuhur');
+                    buatElemenShalat('Asar', 'ashar');
+                    buatElemenShalat('Magrib', 'maghrib');
+                    buatElemenShalat('Isya', 'isya');
+                });
+        }
+    </script>
+</body>
+
+</html>

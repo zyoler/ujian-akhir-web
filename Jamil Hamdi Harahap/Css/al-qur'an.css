@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(../Image/abstract-background-with-islamic-ornament-1847452.jpg);
+}
+
+header {
+    padding: 5px;
+    background: yellowgreen;
+}
+
+h1 {
+    text-align: right;
+    font-family: 'Scheherazade';
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Roboto';
+    color: navajowhite;
+}
+
+.logo-1 {
+    margin: 40px;
+    margin-top: -8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-2 {
+    float: right;
+    justify-content: space-between;
+}
+
+.bar {
+    display: flex;
+    background: grey;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+nav {
+    margin-left: 7%;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+nav a {
+    cursor: pointer;
+    text-decoration: none;
+    margin: 1rem;
+    color: #000;
+    border-bottom: solid #fff;
+    border-width: 1px;
+    transition: all 0.5s;
+}
+
+nav:hover>a {
+    border: solid;
+    border-width: 1px;
+    border-color: gold;
+    background-color: honeydew;
+    padding: 5px;
+    transition: all 1.5s;
+    transform: translateY(5px);
+}
+
+form {
+    flex: 50%;
+    margin: 10px;
+}
+
+select {
+    float: right;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#output {
+    font-weight: bold;
+    background-size: cover;
+    background: url(../Image/images2.jpg);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.arab {
+    font-family: 'Scheherazade', sans-serif;
+    font-size: 2rem;
+    text-align: end;
+    margin-right: 10%;
+}
+
+.terjemahan {
+    margin-bottom: 10px;
+    padding: 20px;
+    text-align: end;
+    margin-right: 7%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #2c292f;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+.footer-distributed .footer-left img {
+    width: 30%;
+}
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
+}
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}

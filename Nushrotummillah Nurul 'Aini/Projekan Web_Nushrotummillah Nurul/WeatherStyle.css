@@ -1,0 +1,46 @@
+main{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+section{
+    padding: 150px 0;
+    background-color: rgb(176, 218, 255);
+    color: rgb(65, 65, 65);
+}
+section img{
+    width: 150px;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px gray;
+    margin-bottom: 10px;
+}
+section div h2{
+    margin-bottom: 10px;
+}
+section div p{
+    font-size: 15px;
+}
+section div{
+    padding: 0 50px;
+}
+main>h3{
+    padding: 50px 50px;
+}
+article{
+    display: flex;
+    justify-content: space-evenly;
+}
+#cuaca{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#cuaca .kelas{
+    width:350px;
+    padding:50px 10px;
+    color:black;
+    box-shadow: 0 3px 5px gray;
+    justify-content: space-evenly;
+}

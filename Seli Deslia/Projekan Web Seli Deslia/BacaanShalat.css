@@ -1,0 +1,46 @@
+body{
+    background: linear-gradient(to right,pink,#b9995c);
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    background: linear-gradient(to right,pink,#b9995c);
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 5px 4px #353b48;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+button{
+    border-radius: 8px;
+    width: 100px;
+    height: 36px;
+    border-style: none;
+    background-color: wheat;
+}
+button:hover{
+    background-color: pink;
+    cursor: pointer;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: 80px;
+    height: 80px;
+}
+p{
+    text-align: justify;
+}
+.container{
+    padding: 50px;
+    padding-bottom: 0;
+    padding-top: 20px;
+}
+.arab{
+    font-size: 40px;
+    text-align: center;
+}

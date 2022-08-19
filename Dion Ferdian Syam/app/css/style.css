@@ -1,0 +1,382 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(../../aset/Fonts/Raleway-SemiBold.ttf); 
+        font-style: normal;
+        font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../../aset/Fonts/Raleway-Bold.ttf); 
+        font-style: normal;
+        font-weight: bold;
+}
+
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: normal;
+}
+
+/* Style the body */
+body {
+    margin: 0;
+}
+
+nav, main {
+    width: 100%;
+    max-width: 1350px;
+    margin: auto;
+}
+
+header{
+    background-color: #D291BC;
+}
+
+h1, h2, h3{
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+
+/* Style the top navigation bar */
+nav {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;  
+}
+
+nav h1{
+    padding: 0 20px;
+    width: 100%;
+}
+.link {
+    color: white;
+    padding: 33px 46px;
+    text-decoration: none;
+}
+
+.active{
+    background-color: #FEC8D8;
+    /* color: black; */
+}
+
+.formPencarian{
+    width: 450px;
+    margin: 0 10px;
+}
+.formPencarian input {
+    padding: 10px;  
+    width: 180px;
+    border: none;
+    transition: ease-in-out, width .35s ease-in-out;
+}
+.formPencarian input:focus {
+    width: 260px;
+}
+
+.formPencarian button {
+    padding: 10px;
+    border: none;
+}
+
+.formPencarian button:hover {
+    background-color: #FEC8D8;
+}
+
+
+nav a:hover {
+    color: black;
+}
+
+/* Column container */
+.row {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+
+
+.side {
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+
+/* Main column */
+.main {
+    flex: 3;
+    background-color: white;
+    padding: 20px;
+}
+
+.popular {
+    height: 530px;
+    display: flex;
+    gap: 25px;
+    overflow-x: scroll;
+}
+
+.popular > div, .allMovie > div {
+    height: 495px;
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 4px 4px 10px darkgrey;
+    transition: .8s;
+}
+
+.popular > div > img, .allMovie > div > img{
+    width: 250px;
+    height: 375px;
+    margin-bottom: 20px;
+}
+
+.ketMovie{
+    text-align: center;
+}
+
+.ketMovie :last-child{
+    margin: 10px 0 0 0;
+    
+}
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #D291BC; 
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+
+    .row,
+    nav {
+        flex-direction: column;
+    }
+    nav a{
+        width: 100%;
+    }
+    .formPencarian input {
+        width: 400px;
+    }
+}
+
+
+/* Modal */
+
+.show {
+    /* display: none; */
+    
+    transition: .8s;
+    animation: pop 1;
+    position: fixed; /* Stay in place */
+    padding-top: 50px; /* Location of the box */
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .hide{
+      animation: pop 1;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,0);
+      z-index: 9999;
+      transition: .8s;
+  }
+
+
+  
+  /* Modal Content */
+  .modalContent {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalContent h3, #d-judul, .sideModal h4{
+    text-align: center;
+}
+
+.close {
+    color: #aaaaaa;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 15px;
+    -webkit-text-security: square;
+}
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modalBody {
+    overflow-y: scroll;
+    height: 90%;
+}
+
+
+  @keyframes pop {
+      0% {
+          transform: scale(0);
+          opacity: 0;
+      }
+
+      100% {
+          transform: scale(1);
+          opacity: 1;
+      }
+  }
+
+  .rowModal {
+    display: flex;
+    width: 100%;
+}
+
+  .sideModal {
+    flex: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Main column */
+.mainModal {
+    flex: 60%;
+    background-color: white;
+    padding: 20px;
+}
+
+  iframe{
+        width: 640px;
+        height: 360px;
+  }
+
+  .posters {
+    width: 250px;
+    height: 375px;
+    box-shadow: 4px 4px 10px darkgray;;
+}
+
+#overview{
+    line-height: 2;
+}
+
+.bungkusAllMovie {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.searchInput{
+   
+    display: flex;
+    gap: 15px;
+}
+
+
+.card{
+    height: 440px;
+    margin-bottom: 15px;
+}
+
+.card > div:hover{
+    height: 440px;   
+}
+
+
+
+.card > div {
+    width: 250px;
+    height: 355px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 4px 4px 10px darkgrey;
+    transition: .5s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bodyCard > img {
+    width: 210px;
+    height: 315px;
+}
+
+.bodyCard > img:hover {
+    cursor: pointer;
+}
+
+
+
+
+.detail{
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  .cariFilm {
+    height: 50px;
+}
+
+.cariFilm input {
+    flex: 75%;
+    font-size: 25px;
+    padding: 0 20px;
+}
+.cariFilm button{
+    flex: 25%;
+}
+
+.result{
+    text-align: center;
+}
+ 

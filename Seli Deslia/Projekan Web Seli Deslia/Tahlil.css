@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    background: linear-gradient(to right,pink,#b9995c);
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 5px 4px #353b48;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: 80px;
+    height: 80px;
+}
+ 

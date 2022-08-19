@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MenuUtama.css">
+    <title>Menu Utama</title>
+</head>
+
+<body>
+    <nav>
+        <header>
+            <marquee>
+                <h1>--------------ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ-------------</h1>
+            </marquee>
+            <a href="home.html" id='logo'>Islamic Web</a>
+        </header>
+           
+
+            <ul>
+                <li class="navbar"><a href="home.html">Beranda</a></li>
+                <li class="navbar"><a href="MenuUtama.html">Kategori</a></li>
+                <li class="navbar"><a href="Tentang.html">Tentang</a></li>
+            </ul>
+            <div class="menu-hamberger">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    </nav>
+   
+     <main>
+        <div>
+            <img
+                src="https://i1.wp.com/fachmycasofa.com/wp-content/uploads/2018/11/Penjelasan-Asmaul-Husna.jpg?w=1201&ssl=1"><br>
+            <button><a href="AsmaulHusna.html">Asmaul Husna</a></button>
+        </div>
+        <div>
+            <img
+                src="https://assets.jalantikus.com/assets/cache/769/330/tips/2019/05/06/aplikasi-doa-harian-d4f0c.jpg"><br>
+            <button><a href="DoaHarian.html">Doa Harian</a></button>
+        </div>
+        <div>
+            <img src="https://www.laduni.id/panel/themes/default/uploads/post/watswasatahalilalan.jpg"><br>
+            <button><a href="Tahlil.html">Tahlil</a></button>
+        </div>
+        <div>
+            <img
+                src="https://images.tokopedia.net/img/cache/500-square/hDjmkQ/2020/8/24/c0d732f0-05be-4883-ae71-963d5a5d3e57.jpg.webp?ect=4g"><br>
+            <button><a href="KisahNabi.html">Kisah Nabi</a></button>
+        </div>
+        <div>
+            <img
+                src="https://thumb.viva.co.id/media/frontend/thumbs3/2020/03/11/5e687d020913f-apa-itu-shalat-syarat-wajib-dan-syarat-sah-shalat_665_374.jpg">
+            <br>
+            <button><a href="bacaanShalat.html">Bacaan Shalat</a></button>
+        </div>
+    </main>
+    <br><br>
+    <footer>
+        <p>QUOTES <br>Love of God is the peak of love. Valleys love is love to others.</p>
+    </footer>
+    <script>
+        const menuHamberger = document.querySelector('.menu-hamberger input');
+        const nav = document.querySelector('nav ul');
+
+        menuHamberger.addEventListener('click', function() {
+            nav.classList.toggle('slide');
+        });
+    </script>
+</body>
+
+</html>

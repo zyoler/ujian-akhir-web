@@ -1,0 +1,95 @@
+body{
+    background-image: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Padauk', sans-serif;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin-left: -45px;
+}
+header h1 a{
+    text-align: center;
+    color: orange;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Padauk', sans-serif;
+    text-decoration: none;
+}
+header h1 a:hover{
+    background-color: orangered;
+    color: snow;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+.main{
+    width: 500px;
+    height: 420px;
+    background-color: #fafafa;
+    margin: 0 auto;
+    padding-top: 20px ;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+}
+.img{
+    background-image: url('risa.jpeg');
+    background-color: #eaeaea;
+    background-size: cover ;
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 1px solid #afafaa;
+}
+h1{
+   text-align: center;
+   font-size: 30px;
+   margin: 0;
+   font-weight: bold;
+   color: #6944ff; 
+}
+.text{
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    color: #324e63;
+}
+p{
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 450px;
+    height: auto;
+    color: #324e63;
+
+}
+main p{
+    text-align: center;
+    color:white;
+    font-family: 'Padauk', sans-serif;
+    letter-spacing: 4px; 
+}
+main{
+    display: inline;
+    text-align: center;
+}
+main div{
+    padding: 10px;
+    margin: 20px;
+}
+main div img{
+    width: 50%px;
+    height: 150px;
+    justify-content: space-evenly;
+    
+}
+div{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}

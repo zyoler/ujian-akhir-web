@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav class="MyNavbar py-1 bg-light">
+            <div class="text-center"><a href="#" class="text-dark text-bold">TokoKU</a></div>
+        </nav>
+        <nav class="MyNavbar"> 
+            <ul class="MyNavbar-nav">
+                <li class="MyNavbar-item"><a href="index.html">Home</a></li>
+                <li class="MyNavbar-item"><a href="product.html">Product</a></li>
+                <li class="MyNavbar-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- conten -->
+    <div class="container">
+        <div class="row"></div>
+    </div>
+    <!-- End constent -->
+    <!-- <Script src="js/jquery-3.6.0.min.js"></Script>     -->
+    <script>
+        fetch('https://wijuna.com/api/produk').then(function(res) {
+            return res.json();
+        }).then(function(res){
+            for(i = 0; i < res['data']['data'].length; i++){
+                document.querySelector('.container .row').innerHTML +=
+                            '<div class="col-lg-4 mt-2 produk'+ i +'">'+
+                                '<div class="MyCard text-light p-2">'+
+                                    '<img class="bg-dark" src="https://wijuna.com/' + res['data']['data'][i]['thumbnails'] + '" alt="Product">'+
+                                    '<div class="MyCard-footer">'+
+                                        '<span class="SpanTitle">'+ res['data']['data'][i]['name'] +'</span>'+
+                                        '<br>'+
+                                        '<span class="spanPrice"> Rp. '+ res['data']['data'][i]['harga'] +'</span>'+
+                                    '</div>'+
+                                '</div>' +
+                            '</div>';
+
+                document.querySelector('.produk' + i).addEventListener("click", myFunction);
+            }        
+        })
+        function myFunction()
+            {
+                console.log('Ok');
+            }
+    </script>
+    <div class="container">
+            <div class="layanan nol">
+                <h3>Product</h3>
+                <p>Product ini merupakan kerja sama dengan website wijuna.com yang merupakan partner bisnis dari TokoKU</p>
+            </div>        
+            <div class="layanan dua">
+                <h3>Whatsapp</h3>
+                <p>Kami Melayani Pemesanan Lewat Whatsapp</p>
+                <a href="tel:+6289669566600">+6282219754695</a>
+            </div>
+            <div class="layanan satu">
+                <h3>Cod</h3>
+                <p>Untuk Sistem pembayan yang tersedia baru COD Atau Pembayaran ditempat</p>
+            </div>        
+            <div class="copyright">
+                <p>&copy:copyright TokoKU All Right Reversed</p>
+            </div>
+            
+    </div>
+</body>
+</html>

@@ -1,0 +1,518 @@
+ /* For page one */
+ /* All Element */
+ 
+ header {
+     overflow: hidden;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     background-color: #222;
+ }
+ 
+ main {
+     margin-top: 155px;
+ }
+ 
+ * {
+     margin: 0;
+     padding: 0;
+ }
+ /* ------------------------------------------------------------------------------------------ */
+ /* Css untuk body */
+ 
+ body {
+     background-color: white;
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ /* ------------------------------------------------------------------------------------------ */
+ /* Css untuk navigasi pertama login dan regis */
+ 
+ .nav-1 {
+     display: flex;
+     justify-content: flex-end;
+     gap: 12px;
+     padding: 2px 12px;
+     background-color: orange;
+ }
+ 
+ .nav-1 a {
+     text-decoration: unset;
+     color: inherit;
+ }
+ 
+ .nav-1 a:hover {
+     color: black;
+ }
+ /* ------------------------------------------------------------------------------------- */
+ /* Css logo pencarian dan keranjang */
+ 
+ .sub-search {
+     position: absolute;
+     background-color: inherit;
+     width: 100%;
+     height: 68%;
+     display: none;
+ }
+ 
+ .container-judul {
+     display: flex;
+     justify-content: space-between;
+     padding: 25px 10px;
+ }
+ 
+ .items-logo h1 {
+     color: orange;
+     font-size: 2.2em;
+ }
+ 
+ .items-caricart {
+     display: flex;
+     gap: 5px;
+ }
+ 
+ .form input,
+ .form1 input {
+     height: 35px;
+     box-sizing: border-box;
+     border: solid orange;
+     border-right: unset;
+     border-top-left-radius: 15px;
+     border-bottom-left-radius: 15px;
+ }
+ 
+ .form {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .cancel {
+     margin-left: 25px;
+     border: unset;
+     background-color: inherit;
+     color: orange;
+     cursor: pointer;
+ }
+ 
+ .button-search,
+ .button-search1 {
+     width: 35px;
+     height: 35px;
+     color: orange;
+     border: solid orange;
+     border-left: unset;
+     border-bottom-right-radius: 15px;
+     border-top-right-radius: 15px;
+     font-size: 20px;
+     cursor: pointer;
+     background-color: inherit;
+ }
+ 
+ .button-cart {
+     width: 35px;
+     height: 35px;
+     border: unset;
+     background-color: inherit;
+     color: orange;
+     font-size: 25px;
+     cursor: pointer;
+ }
+ /* ------------------------------------------------------------------------------------------ */
+ /* Css untuk navigasi kedua, home,shop dll tampilan web*/
+ 
+ .button-cari {
+     display: none;
+ }
+ 
+ .batal {
+     display: none;
+ }
+ 
+ .nav-2 {
+     display: flex;
+     justify-content: center;
+     background-color: orange;
+ }
+ 
+ .nav-2 a {
+     flex-grow: 1;
+     max-width: 128px;
+     text-align: center;
+     padding: 12px 0;
+     text-decoration: unset;
+     color: inherit;
+ }
+ 
+ .nav-2 a:hover {
+     color: black;
+ }
+ 
+ .nav-2 .bars,
+ .nav-2 .times {
+     display: none;
+ }
+ 
+ .nav-2 .akun {
+     display: none;
+ }
+ /* ----------------------------------------------------------------------------- */
+ /* Css slideshow main */
+ 
+ .container-slideshow {
+     max-width: 1000px;
+     margin: auto;
+ }
+ 
+ .image {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     height: 50%;
+ }
+ 
+ .pict {
+     height: 400px;
+     padding: 15px 0;
+ }
+ 
+ .text1,
+ .text2,
+ .text3,
+ .text4,
+ .text5 {
+     text-align: center;
+     color: black;
+ }
+ 
+ .myslide {
+     display: none;
+ }
+ 
+ .dot {
+     cursor: pointer;
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+ }
+ 
+ .active,
+ .dot:hover {
+     background-color: #717171;
+ }
+ 
+ .fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 1.5s;
+     animation-name: fade;
+     animation-duration: 1.5s;
+ }
+ 
+ .promo {
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     flex-wrap: wrap;
+     padding: 15px;
+     gap: 10px;
+ }
+ 
+ .promo img {
+     max-width: 450px;
+     padding: 17px;
+ }
+ 
+ .info h1,
+ .par-1,
+ .par-2 {
+     text-align: center;
+     color: black;
+     padding: 15px;
+ }
+ 
+ .read-more,
+ .read-less {
+     display: none;
+ }
+ /* ---------------------------------------------------------------------------- */
+ /* Css untuk footer */
+ 
+ footer {
+     background-color: orange;
+     padding: 5px;
+ }
+ 
+ footer div {
+     text-align: center;
+     padding: 5px 0;
+ }
+ 
+ footer a {
+     text-decoration: unset;
+ }
+ 
+ .copy-privacy a {
+     color: inherit;
+ }
+ 
+ .copy-privacy a:hover {
+     color: black;
+ }
+ 
+ .hasil {
+     color: black;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 25px;
+ }
+ /* ----------------------------------------------------------------------------------- */
+ /* Css untuk navigasi kedua, home,shop dll tampilan mobile*/
+ 
+ @media (max-width: 600px) {
+     .nav-1 {
+         display: none;
+     }
+     .items-caricart {
+         gap: unset;
+     }
+     .texttt,
+     .button-search {
+         display: none;
+     }
+     .inp {
+         display: inline-block;
+     }
+     .form1 {
+         display: flex;
+         align-items: center;
+     }
+     .button-cari {
+         display: block;
+         width: 35px;
+         height: 35px;
+         color: orange;
+         border: unset;
+         border-radius: 15px;
+         cursor: pointer;
+         font-size: 20px;
+         cursor: pointer;
+         background-color: inherit;
+     }
+     .nav-2 {
+         justify-content: space-between;
+         flex-direction: column;
+     }
+     .nav-2 a {
+         flex-grow: unset;
+         max-width: 80px;
+         text-align: unset;
+         padding: 12px;
+         text-decoration: unset;
+         position: relative;
+         right: 0;
+     }
+     .nav-2 .bars {
+         display: block;
+         position: absolute;
+     }
+     .nav-2 a:not(:first-child) {
+         display: none;
+     }
+     .nav-2 a.bars {
+         float: right;
+         display: block;
+     }
+     .responsive a:not(:first-child) {
+         display: block;
+     }
+     .responsive .times {
+         display: block;
+         position: absolute;
+     }
+     .responsive a.times {
+         float: right;
+         display: block;
+     }
+     .responsive a.bars {
+         display: none;
+     }
+     .responsive .akun {
+         font-size: 12px;
+         padding: 6px;
+         background-color: black;
+         max-width: 100%;
+     }
+     .responsive .akun:hover {
+         color: orange
+     }
+     .items-caricart {
+         align-items: center;
+     }
+     .pict {
+         height: 400px;
+         padding: 15px 5px;
+     }
+     .banyak-info {
+         display: flex;
+         justify-content: center;
+         padding: 5px;
+         color: black;
+     }
+     .read-more {
+         color: black;
+         border: unset;
+         background-color: inherit;
+         cursor: pointer;
+         display: block;
+     }
+     .read-less {
+         color: black;
+         border: unset;
+         background-color: inherit;
+         cursor: pointer;
+         display: none;
+     }
+     .par-2 {
+         display: none;
+     }
+     .muncul {
+         display: block;
+     }
+     .hilang {
+         display: none;
+     }
+ }
+ /* ------------------------------------------------------------------------------------------------- */
+ 
+ @media (max-width: 280px) {
+     .button-cart,
+     .button-search {
+         width: 25px;
+         height: 25px;
+     }
+     .items-logo h1 {
+         font-size: 2em;
+     }
+ }
+ /* --------------------------------------------------------------------------------- */
+ 
+ .list-produk {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     padding: 10px;
+ }
+ 
+ .container-product {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     width: 250px;
+     height: 250px;
+     border: solid rgb(99, 97, 97);
+     border-radius: 5px;
+     background-color: #222;
+ }
+ 
+ .figure-img {
+     width: 60%;
+     height: 60%;
+ }
+ 
+ .image-product {
+     width: 100%;
+     height: 100%;
+ }
+ 
+ .title-product {
+     width: 100%;
+     height: 15%;
+     font-size: 12px;
+     padding: 5px;
+ }
+ 
+ .title-product a {
+     text-decoration: unset;
+     color: inherit;
+ }
+ 
+ .price-product {
+     width: 100%;
+     height: 10%;
+     display: flex;
+     justify-content: space-between;
+     align-items: baseline;
+     padding: 5px;
+ }
+ 
+ .tombol-keranjang {
+     width: 35px;
+     height: 25px;
+     font-size: 20px;
+     cursor: pointer;
+ }
+ 
+ @media (prefers-color-scheme: dark) {
+     body {
+         background-color: #222;
+         color: black;
+     }
+     .button-search {
+         background-color: inherit;
+     }
+     .responsive .akun {
+         font-size: 12px;
+         padding: 6px;
+         background-color: white;
+         max-width: 100%;
+     }
+     .text1,
+     .text2,
+     .text3,
+     .text4,
+     .text5 {
+         text-align: center;
+         color: white;
+     }
+     form input {
+         background-color: inherit;
+         color: white;
+     }
+     .nav-1 a:hover {
+         color: white;
+     }
+     .nav-2 a:hover {
+         color: white;
+     }
+     .copy-privacy a:hover {
+         color: white;
+     }
+     .info h1,
+     .par-1,
+     .par-2,
+     .read-more,
+     .read-less,
+     .banyak-info {
+         color: white;
+     }
+     .container-product {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         width: 250px;
+         height: 250px;
+         border: solid rgb(99, 97, 97);
+         border-radius: 5px;
+         background-color: whitesmoke;
+     }
+     .hasil {
+         color: white;
+     }
+ }

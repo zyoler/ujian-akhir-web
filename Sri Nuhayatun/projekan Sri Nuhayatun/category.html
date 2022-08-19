@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="category.css">
+</head>
+<body>
+    <marquee direction='left' scrolldelay='150' id='ucapan'>welcome to the movie world website</marquee>
+    <header>
+        <nav>
+            <div class='logo'>
+                <a href="home.html"><h1>Movies category</h1></a>
+            </div>
+            <ul id='kategor'>
+                <li><button onclick='kategory("action")' class='pilih'>Action</button></li>
+                <li><button onclick='kategory("adventure")' class='pilih'>Adventure</button></li>
+                <li><button onclick='kategory("comedy")' class='pilih'>Comedy</button></li>
+                <li><button onclick='kategory("drama")' class='pilih'>Drama</button></li>
+                <li><button onclick='kategory("fantasy")' class='pilih'>Fantasy</button></li>
+                <li><button onclick='kategory("horror")' class='pilih'>Horror</button></li>
+                <li><button onclick='kategory("romance")' class='pilih'>Romance</button></li>
+                <li><button onclick='kategory("thriller")' class='pilih'>Thriller</button></li>
+            </ul>
+            <div class='menu1'><!--toggle=seperti saklar on of-->
+                <input type="checkbox"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id='output1'></div>
+    </main>
+    <footer>
+        <h4>copyright @Movie World Sri_Nuhayatun</h4>
+    </footer>
+
+    <script src='category.js'></script>
+    <script src='category-toggle.js'></script>
+    
+</body>
+</html>

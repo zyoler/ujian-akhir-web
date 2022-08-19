@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    background-color: lightseagreen;
+    padding: 16px 30px;
+}
+
+main {
+    padding-inline: 16px;
+    max-width: 850px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+main>* {
+    background-image: url('../Img/spikes.png');
+    border: 1px solid gray;
+    padding: 20px 30px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+
+h2 {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article {
+    font-size: 2.5rem;
+    font-family: 'Scheherazade', serif;
+    text-align: end;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+p {
+    font-family: cursive;
+    font-size: 18px;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+img{
+    width: 80px;
+    display: flex;
+}
+
+header ul li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px ;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    display: flex;
+    font-variant-caps: petite-caps;
+    font-size: 20px;
+}
+
+ul li :hover{
+    background-color: rgb(42, 96, 197);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+nav {
+    text-align: center;
+    background-color: gainsboro;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+
+nav>span {
+    padding: 4px 20px 8px;
+    border: 1px solid;
+    font-size: larger;
+    border-radius: 5px;
+    margin: 50px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(47, 194, 47);
+}
+
+body {
+    background-image: url('../Img/moroccan-flower-dark.png');
+}
+
+#nama-logo{
+    font-family: cursive;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 12px;
+    margin-right: 20px;
+    color: floralwhite;
+}
+
+#judul-nav {
+    margin: 15px;
+    font-family: serif;
+    font-size: smaller;
+}
+
+#nav-2 {
+    padding-bottom: 20px;
+}
+
+footer>div {
+    padding-inline: 16px;
+    max-width: 800px;
+    margin-inline: auto;
+    text-align: center;
+    background-color: cadetblue;
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-family: cursive;
+    font-size: unset;
+    background-color: aquamarine;
+}
+

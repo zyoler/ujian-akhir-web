@@ -1,0 +1,51 @@
+.divnye{
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background: url(./a8135ae.png);
+  background-size: 100% 100%;
+  margin-left: 1px;
+  border: solid rgba(63, 62, 62, 0.733);
+}
+
+.anim{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+  text-align: center;
+  flex-flow: row wrap;
+  font-family: chelsea;
+  align-items: center;
+    
+}
+
+.anim > * {
+  flex-basis: 20rem;
+  flex-shrink: 0; 
+}
+
+.anim img{
+  width: 1302px;
+}
+
+.anim h3{
+  border: solid black;
+  color:rgb(158, 217, 226);
+  background-color: black;
+}
+
+.anim img{
+  margin-top: -21px;
+  border: solid black;
+}
+
+.anim a{
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+  background: url(./download\ \(1\).png);
+  background-size: cover;
+}
+
+.anim p{
+  color: rgb(0, 0, 0);
+}

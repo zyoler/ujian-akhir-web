@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    background-color: rgb(90, 90, 90);
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    box-sizing: border-box;
+    background-color: rgba(102,255,217,.25);
+}
+
+#pp {
+    width: 250px;
+    border-radius: 50%;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+a {
+    color: black;
+    text-decoration:none;
+}
+
+#overview {
+    text-align: center;
+    padding: 32px;
+    margin: 0 16em;
+}
+
+#history{
+    max-width: 500px;
+    margin: 3em auto;
+}
+
+table,th,td {
+    border: 1px solid;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+footer {
+    text-align: center;
+}
+
+#about {
+    text-align: left;
+    padding: 16px;
+    margin: 0 2em;
+}
+
+.vidio {
+    width: 200px;
+    height: 350px; 
+    padding: 2px 16px;   
+    margin: 0 2em;
+}
+
+#contact {
+    padding: 2px 16px;
+}
+
+body#index3 {
+    background-color: lightsalmon;
+}
+
+#tombol {
+    background-color: rgb(102, 179, 255);
+    width: 70px;
+    height: 30px;
+    font-weight: bold;
+}
+
+#tombol:hover {
+    background-color: green;
+    color: white;
+}
+
+.sosmed {
+    padding: 16px 0 16px 32px;
+    width: 35px;
+}
+
+aside {
+    font-size: 20px;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    float: right;
+    width: 25%;
+    margin: 70px 50px 0 0;
+}
